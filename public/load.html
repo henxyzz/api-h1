@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loading...</title>
+  <style>
+    /* Gaya untuk animasi loading */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #121212;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .loader {
+      position: relative;
+      width: 100px;
+      height: 100px;
+      border: 10px solid transparent;
+      border-top-color: #00ff99;
+      border-radius: 50%;
+      animation: rotate 1.5s linear infinite;
+    }
+
+    /* Animasi rotasi */
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    /* Pesan loading */
+    .loading-text {
+      position: absolute;
+      top: 120%;
+      font-size: 18px;
+      color: #00ff99;
+      text-align: center;
+      animation: fadeText 1.5s ease-in-out infinite;
+    }
+
+    /* Animasi fading teks */
+    @keyframes fadeText {
+      0% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Animasi Loader -->
+  <div class="loader"></div>
+  <div class="loading-text">Loading...</div>
+
+  <script>
+    // Setelah 3 detik, arahkan ke docs.html
+    setTimeout(() => {
+      window.location.href = '/docs';
+    }, 3000);
+  </script>
+
+</body>
+</html>

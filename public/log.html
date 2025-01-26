@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Logs & Execute Commands</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #2e2e2e;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 10px;
+      background-color: #333;
+      border-radius: 8px;
+    }
+    h1 {
+      text-align: center;
+      color: #f1f1f1;
+    }
+    #logs {
+      max-height: 400px;
+      overflow-y: auto;
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #111;
+      border-radius: 5px;
+      font-family: monospace;
+      white-space: pre-wrap;
+    }
+    .log-entry {
+      margin: 5px 0;
+    }
+    .error {
+      color: #ff3333;
+    }
+    .info {
+      color: #33cc33;
+    }
+    .warning {
+      color: #ffcc00;
+    }
+    #command-input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 20px;
+      border-radius: 5px;
+      border: 1px solid #444;
+      background-color: #222;
+      color: #fff;
+    }
+    #command-btn {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      background-color: #555;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+    #command-btn:hover {
+      background-color: #444;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Live Logs & Execute Commands</h1>
+    <div id="logs"></div>
+    <input id="command-input" type="text" placeholder="Ketik perintah di sini...">
+    <button id="command-btn">Kirim Perintah</button>
+  </div>
+
+  <script>
+    // Membuat koneksi WebSocket
+    const ws = new WebSocket('ws://localhost:3000');
+
+    // Fungsi untuk menampilkan log di halaman
+    function displayLog(message, type) {
+      const logContainer = document.getElementById('logs');
+      const logEntry = document.createElement('div');
+      logEntry.classList.add('log-entry');
+      logEntry.textContent = message;
+
+      // Menentukan warna log berdasarkan jenisnya
+      if (type === 'error') {
+        logEntry.classList.add('error');
+      } else if (type === 'info') {
+        logEntry.classList.add('info');
+      } else if (type === 'warning') {
+        logEntry.classList.add('warning');
+      }
+
+      logContainer.appendChild(logEntry);
+
+      // Scroll ke bagian bawah log agar log terbaru terlihat
+      logContainer.scrollTop = logContainer.scrollHeight;
+    }
+
+    // Menangani pesan yang diterima dari WebSocket
+    ws.onmessage = function(event) {
+      const message = event.data;
+      displayLog(message, 'info'); // Setiap log yang datang dianggap sebagai info
+    };
+
+    // Menangani error WebSocket
+    ws.onerror = function(event) {
+      displayLog('Error WebSocket: Tidak dapat terhubung ke server.', 'error');
+    };
+
+    // Menangani koneksi WebSocket yang berhasil
+    ws.onopen = function() {
+      displayLog('Terhubung ke server WebSocket. Menunggu log...', 'info');
+    };
+
+    // Menangani penutupan WebSocket
+    ws.onclose = function() {
+      displayLog('Koneksi WebSocket terputus.', 'warning');
+    };
+
+    // Menangani tombol kirim perintah
+    document.getElementById('command-btn').onclick = function() {
+      const commandInput = document.getElementById('command-input').value;
+      if (commandInput) {
+        ws.send(commandInput); // Kirim perintah ke server
+        displayLog(`Perintah dikirim: ${commandInput}`, 'info');
+        document.getElementById('command-input').value = ''; // Kosongkan input setelah mengirim
+      }
+    };
+  </script>
+</body>
+</html>

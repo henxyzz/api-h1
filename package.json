@@ -1,7 +1,7 @@
 {
   "name": "express-auto-upload",
   "version": "1.0.0",
-  "description": "Server dengan upload file otomatis dan penambahan route otomatis",
+  "description": "Server dengan upload file otomatis dan penambahan route API secara dinamis.",
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
@@ -9,15 +9,19 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
+    "colors": "^1.4.0",
     "crypto-js": "^4.1.1",
     "dotenv": "^16.4.7",
     "express": "^4.17.1",
     "express-rate-limit": "^5.3.0",
     "fs-extra": "^10.1.0",
     "multer": "^1.4.4",
+    "random-useragent": "^0.5.0",
+    "request-promise-native": "^1.0.9",
     "stack": "latest",
     "strict": "latest",
-    "yt-search": "^1.0.0"
+    "yt-search": "^1.0.0",
+    "ws": "^8.8.0" // Menambahkan ws di sini
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

