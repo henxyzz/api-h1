@@ -21,11 +21,13 @@
     "stack": "latest",
     "strict": "latest",
     "yt-search": "^1.0.0",
-    "ws": "^8.8.0" // Menambahkan ws di sini
+    "ws": "^8.8.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
   },
   "author": "Henzx",
+  "license": "MIT"
+}nzx",
   "license": "MIT"
 }

@@ -1,4 +1,5 @@
 const express = require('express');
+const http = require('http');
 const rateLimit = require('express-rate-limit');
 const multer = require('multer');
 const path = require('path');
@@ -13,10 +14,12 @@ dotenv.config();
 const app = express();
 const port = process.env.PORT || 3000; // Gunakan port dinamis
 
-// Setup WebSocket
-const wss = new WebSocket.Server({ server: app.listen(port) });
+// Membuat server HTTP terpisah
+const server = http.createServer(app);
 
-// Membuat koneksi WebSocket
+// Setup WebSocket pada server HTTP
+const wss = new WebSocket.Server({ server: server });
+
 wss.on('connection', ws => {
   console.log('Client terhubung');
 
@@ -230,6 +233,6 @@ fs.watch(path.join(__dirname, 'routes'), (eventType, filename) => {
 });
 
 // Mulai server
-app.listen(port, () => {
+server.listen(port, () => {
   console.log(`Server berjalan di http://localhost:${port}`);
-}); 
+});

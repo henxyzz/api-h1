@@ -1,37 +1,54 @@
 const express = require('express');
-const ytSearch = require('yt-search');
+const axios = require('axios');
+const cheerio = require('cheerio');
 const router = express.Router();
 
-// Endpoint untuk mencari video di YouTube
+// Endpoint untuk pencarian video YouTube
 router.get('/', async (req, res) => {
-  const query = req.query.query; // Ambil parameter query dari URL
+  const query = req.query.query;  // Ambil parameter query dari URL
 
   if (!query) {
     return res.status(400).json({ error: 'Query pencarian tidak diberikan.' });
   }
 
+  const searchUrl = `https://www.y2mate.com/search/${encodeURIComponent(query)}`;
+
   try {
-    // Melakukan pencarian video di YouTube
-    const result = await ytSearch(query);
+    // Lakukan scraping pada halaman pencarian
+    const { data } = await axios.get(searchUrl);
+    const $ = cheerio.load(data);
 
-    // Mengambil hasil pencarian pertama
-    const videos = result.videos.map(video => ({
-      title: video.title,
-      url: video.url,
-      description: video.description,
-      views: video.views,
-      duration: video.duration,
-      thumbnail: video.thumbnail.url,
-    }));
+    // Menyimpan hasil video
+    const videos = [];
+    $('#list-video .tablescraper-selected-row').each((i, element) => {
+      const title = $(element).find('.search-info a').text().trim();
+      const url = $(element).find('.search-info a').attr('href');
+      const thumbnail = $(element).find('.ytthumbnail').attr('data-src');
 
-    // Mengirimkan hasil pencarian sebagai response
-    res.json({
-      query: query,
-      totalResults: result.videos.length,
-      videos: videos,
+      if (title && url && thumbnail) {
+        videos.push({
+          title,
+          url: `https://www.y2mate.com${url}`,
+          thumbnail,
+        });
+      }
     });
+
+    // Mengirimkan respons dengan hasil pencarian
+    if (videos.length > 0) {
+      res.json({
+        query: query,
+        totalResults: videos.length,
+        author: "Azatxyz",
+        videos: videos,
+      });
+    } else {
+      res.status(404).json({
+        error: 'Tidak ada video yang ditemukan untuk query tersebut.',
+      });
+    }
   } catch (error) {
-    console.error('Terjadi kesalahan saat mencari video:', error);
+    console.error('Terjadi kesalahan saat melakukan scraping:', error);
     res.status(500).json({ error: 'Gagal melakukan pencarian.' });
   }
 });

@@ -1,5 +1,5 @@
 const express = require('express');
-const axios = require('axios');
+const cloudscraper = require('cloudscraper'); // Gunakan cloudscraper untuk melewati proteksi Cloudflare
 const cheerio = require('cheerio');
 const router = express.Router();
 
@@ -16,11 +16,8 @@ router.get('/', async (req, res) => {
     const searchUrl = `https://apkpure.com/id/search?q=${encodeURIComponent(q)}`;
 
     try {
-        const { data } = await axios.get(searchUrl, {
-            headers: {
-                'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36',
-            },
-        });
+        // Menggunakan cloudscraper untuk mengambil data
+        const data = await cloudscraper.get(searchUrl);
 
         const $ = cheerio.load(data);
         const results = [];

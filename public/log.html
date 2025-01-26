@@ -79,8 +79,8 @@
 
   <script>
     // Membuat koneksi WebSocket
-    const ws = new WebSocket('ws://localhost:3000');
-
+    let ws = new WebSocket('ws://localhost:3000');
+    
     // Fungsi untuk menampilkan log di halaman
     function displayLog(message, type) {
       const logContainer = document.getElementById('logs');
@@ -88,7 +88,6 @@
       logEntry.classList.add('log-entry');
       logEntry.textContent = message;
 
-      // Menentukan warna log berdasarkan jenisnya
       if (type === 'error') {
         logEntry.classList.add('error');
       } else if (type === 'info') {
@@ -98,31 +97,39 @@
       }
 
       logContainer.appendChild(logEntry);
-
-      // Scroll ke bagian bawah log agar log terbaru terlihat
       logContainer.scrollTop = logContainer.scrollHeight;
     }
 
-    // Menangani pesan yang diterima dari WebSocket
-    ws.onmessage = function(event) {
-      const message = event.data;
-      displayLog(message, 'info'); // Setiap log yang datang dianggap sebagai info
-    };
+    // Setup WebSocket handlers
+    function setupWebSocket(ws) {
+      ws.onmessage = function(event) {
+        const message = event.data;
+        displayLog(message, 'info');
+      };
 
-    // Menangani error WebSocket
-    ws.onerror = function(event) {
-      displayLog('Error WebSocket: Tidak dapat terhubung ke server.', 'error');
-    };
+      ws.onerror = function(event) {
+        displayLog('Error WebSocket: Tidak dapat terhubung ke server.', 'error');
+        reconnectWebSocket(); // Coba lagi jika terjadi error
+      };
 
-    // Menangani koneksi WebSocket yang berhasil
-    ws.onopen = function() {
-      displayLog('Terhubung ke server WebSocket. Menunggu log...', 'info');
-    };
+      ws.onopen = function() {
+        displayLog('Terhubung ke server WebSocket. Menunggu log...', 'info');
+      };
 
-    // Menangani penutupan WebSocket
-    ws.onclose = function() {
-      displayLog('Koneksi WebSocket terputus.', 'warning');
-    };
+      ws.onclose = function() {
+        displayLog('Koneksi WebSocket terputus.', 'warning');
+        reconnectWebSocket(); // Coba lagi jika terputus
+      };
+    }
+
+    // Fungsi untuk mencoba reconnect ke WebSocket
+    function reconnectWebSocket() {
+      displayLog('Mencoba untuk terhubung kembali...', 'warning');
+      setTimeout(() => {
+        ws = new WebSocket('ws://localhost:3000'); // Coba buat koneksi ulang
+        setupWebSocket(ws); // Setup ulang koneksi WebSocket
+      }, 5000); // Mencoba setiap 5 detik
+    }
 
     // Menangani tombol kirim perintah
     document.getElementById('command-btn').onclick = function() {
@@ -133,6 +140,9 @@
         document.getElementById('command-input').value = ''; // Kosongkan input setelah mengirim
       }
     };
+
+    // Memulai koneksi WebSocket saat halaman dimuat
+    setupWebSocket(ws);
   </script>
 </body>
 </html>
