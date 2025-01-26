@@ -16,7 +16,19 @@ const links = {
     deletingtext: 'https://en.ephoto360.com/create-eraser-deleting-text-effect-online-717.html',
     sandsummer: 'https://en.ephoto360.com/write-in-sand-summer-beach-online-576.html',
     makingneon: 'https://en.ephoto360.com/making-neon-light-text-effect-with-galaxy-style-521.html',
-    royaltext: 'https://en.ephoto360.com/royal-text-effect-online-free-471.html'
+    royaltext: 'https://en.ephoto360.com/royal-text-effect-online-free-471.html',
+    1917style: 'https://en.ephoto360.com/1917-style-text-effect-523.html',
+    galaxywp: 'https://en.ephoto360.com/create-galaxy-wallpaper-mobile-online-528.html',
+    multicolorneon: 'https://en.ephoto360.com/create-multicolored-neon-light-signatures-591.html',
+    luxurygold: 'https://en.ephoto360.com/create-a-luxury-gold-text-effect-online-594.html',
+    typography: 'https://en.ephoto360.com/create-typography-text-effect-on-pavement-online-774.html',
+   blackpinklg: 'https://en.ephoto360.com/online-blackpink-style-logo-maker-effect-711.html',
+   glowtext: 'https://en.ephoto360.com/create-glowing-text-effects-online-706.html',
+   underwater: 'https://en.ephoto360.com/3d-underwater-text-effect-online-682.html',
+   graffiti: 'https://en.ephoto360.com/create-a-cartoon-style-graffiti-text-effect-online-668.html',
+   multicolor3d: 'https://en.ephoto360.com/multicolor-3d-paper-cut-style-text-effect-658.html',
+   watercolor: 'https://en.ephoto360.com/create-a-watercolor-text-effect-online-655.html',
+   cloudstext: 'https://en.ephoto360.com/write-text-effect-clouds-in-the-sky-online-619.html',
 };
 
 const createEffect = async (command, text) => {
