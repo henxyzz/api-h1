@@ -1,7 +1,10 @@
-const express = require('express');
 const cloudscraper = require('cloudscraper'); // Gunakan cloudscraper untuk melewati proteksi Cloudflare
 const cheerio = require('cheerio');
+const express = require('express');
 const router = express.Router();
+
+// Fungsi untuk memberi delay
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
 // Route pencarian APK Pure
 router.get('/', async (req, res) => {
@@ -16,11 +19,27 @@ router.get('/', async (req, res) => {
     const searchUrl = `https://apkpure.com/id/search?q=${encodeURIComponent(q)}`;
 
     try {
-        // Menggunakan cloudscraper untuk mengambil data
-        const data = await cloudscraper.get(searchUrl);
+        // Header lengkap untuk menghindari deteksi bot
+        const headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36",
+            "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
+            "Accept-Language": "en-US,en;q=0.9,id;q=0.8",
+            "Accept-Encoding": "gzip, deflate, br",
+            "Connection": "keep-alive",
+            "Upgrade-Insecure-Requests": "1",
+            "Cache-Control": "max-age=0",
+            "TE": "Trailers", // Menghindari pemblokiran
+        };
+
+        // Menggunakan cloudscraper untuk mengambil data dengan headers lengkap
+        const data = await cloudscraper.get(searchUrl, { headers });
+
+        // Tambahkan delay agar tidak terlalu cepat melakukan permintaan
+        await sleep(2000); // Delay 2 detik
 
         const $ = cheerio.load(data);
         const results = [];
+        const appLinksSet = new Set(); // Gunakan Set untuk mengecek duplikat
 
         $('li dl').each((_, element) => {
             const appLink = $(element).find('a.dd').attr('href');
@@ -29,13 +48,21 @@ router.get('/', async (req, res) => {
             const appIcon = $(element).find('img').attr('src');
             const appRating = $(element).find('.score-search').attr('title') || 'No rating';
 
-            results.push({
-                appName,
-                appDeveloper,
-                appRating,
-                appIcon,
-                appLink: appLink ? `https://apkpure.com${appLink}` : null,
-            });
+            // Cek apakah appLink sudah ada dalam Set
+            if (appLink && !appLinksSet.has(appLink)) {
+                appLinksSet.add(appLink); // Tambahkan appLink ke Set jika belum ada
+
+                // Pastikan appLink hanya mengandung satu instance dari "https://apkpure.com"
+                const fullAppLink = appLink.startsWith('https://apkpure.com') ? appLink : `https://apkpure.com${appLink}`;
+
+                results.push({
+                    appName,
+                    appDeveloper,
+                    appRating,
+                    appIcon,
+                    appLink: fullAppLink, // AppLink yang sudah benar
+                });
+            }
         });
 
         if (results.length === 0) {

@@ -17,7 +17,7 @@ const links = {
     sandsummer: 'https://en.ephoto360.com/write-in-sand-summer-beach-online-576.html',
     makingneon: 'https://en.ephoto360.com/making-neon-light-text-effect-with-galaxy-style-521.html',
     royaltext: 'https://en.ephoto360.com/royal-text-effect-online-free-471.html',
-    1917style: 'https://en.ephoto360.com/1917-style-text-effect-523.html',
+    oldstyle: 'https://en.ephoto360.com/1917-style-text-effect-523.html',
     galaxywp: 'https://en.ephoto360.com/create-galaxy-wallpaper-mobile-online-528.html',
     multicolorneon: 'https://en.ephoto360.com/create-multicolored-neon-light-signatures-591.html',
     luxurygold: 'https://en.ephoto360.com/create-a-luxury-gold-text-effect-online-594.html',

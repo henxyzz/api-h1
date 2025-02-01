@@ -1,51 +1,17 @@
 const express = require('express');
-const http = require('http');
 const rateLimit = require('express-rate-limit');
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
 const dotenv = require('dotenv');
 const { exec } = require('child_process');
-const WebSocket = require('ws');
+const chalk = require('chalk'); // Import chalk untuk pewarnaan teks
 
 // Memuat variabel lingkungan dari file .env
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 3000; // Gunakan port dinamis
-
-// Membuat server HTTP terpisah
-const server = http.createServer(app);
-
-// Setup WebSocket pada server HTTP
-const wss = new WebSocket.Server({ server: server });
-
-wss.on('connection', ws => {
-  console.log('Client terhubung');
-
-  ws.on('message', message => {
-    console.log('Perintah diterima:', message);
-
-    // Eksekusi perintah
-    exec(message, (error, stdout, stderr) => {
-      if (error) {
-        ws.send(`Error: ${error.message}`);
-        return;
-      }
-      if (stderr) {
-        ws.send(`stderr: ${stderr}`);
-        return;
-      }
-      ws.send(`stdout: ${stdout}`);
-    });
-  });
-
-  ws.on('close', () => {
-    console.log('Client terputus');
-  });
-
-  ws.send('Koneksi WebSocket terbuka. Silakan kirim perintah.');
-});
+const port = process.env.PORT || 8080; // Gunakan port dinamis
 
 // Fungsi untuk memeriksa dan menginstal modul yang hilang
 function checkAndInstallModule(moduleName, callback) {
@@ -70,7 +36,7 @@ function checkAndInstallModule(moduleName, callback) {
 }
 
 // Memeriksa dan menginstal modul yang diperlukan
-const requiredModules = ['express', 'express-rate-limit', 'multer', 'ws']; // Daftar modul yang diperlukan
+const requiredModules = ['express', 'express-rate-limit', 'multer', 'chalk']; // Menggunakan chalk untuk warna
 requiredModules.forEach(module => {
   checkAndInstallModule(module, () => {
     console.log(`${module} siap digunakan.`);
@@ -140,32 +106,6 @@ app.get('/docs', (req, res) => {
   });
 });
 
-// Endpoint untuk menangani file upload
-app.post('/upload', upload.single('file'), (req, res) => {
-  console.log('req.file:', req.file); // Debug informasi file
-  console.log('req.body:', req.body); // Debug informasi form
-
-  if (!req.file) {
-    return res.status(400).json({
-      success: false,
-      message: "File tidak ditemukan. Pastikan form upload memiliki field 'file'.",
-    });
-  }
-
-  const folder = req.body.destination || 'public';
-  const filePath = path.join(__dirname, folder, req.file.filename);
-
-  if (folder === 'routes') {
-    const moduleName = req.file.filename.replace('.js', '');
-    updatePackageJson(moduleName, () => {
-      res.send(`File JavaScript berhasil diupload dan endpoint tersedia di /api/${moduleName}`);
-      registerRoutes(); // Registrasi ulang endpoint
-    });
-  } else {
-    res.send(`File berhasil diupload ke folder ${folder}`);
-  }
-});
-
 // Fungsi untuk memperbarui package.json dan menginstal ulang modul
 function updatePackageJson(moduleName, callback) {
   const packageJsonPath = path.join(__dirname, 'package.json');
@@ -191,48 +131,45 @@ function updatePackageJson(moduleName, callback) {
   }
 }
 
-// Fungsi untuk meregistrasi endpoint dinamis dari folder routes
 function registerRoutes() {
   const routesPath = path.join(__dirname, 'routes');
-  fs.readdir(routesPath, (err, files) => {
-    if (err) {
-      console.error('Gagal membaca folder routes:', err);
-      return;
-    }
 
-    files.forEach((file) => {
-      if (file.endsWith('.js')) {
-        const routePath = `/api/${file.replace('.js', '')}`;
-        const modulePath = path.join(__dirname, 'routes', file);
-
-        // Hapus cache sebelumnya (hot reload)
-        delete require.cache[require.resolve(modulePath)];
-
-        // Daftarkan endpoint
-        try {
-          const route = require(modulePath);
-          app.use(routePath, route);
-          console.log(`Endpoint otomatis terdaftar: ${routePath}`);
-        } catch (err) {
-          console.error(`Gagal meregistrasi file ${file} sebagai endpoint:`, err);
-        }
-      }
-    });
+  // Hapus semua route sebelum daftar ulang
+  Object.keys(require.cache).forEach((file) => {
+    if (file.includes('/routes/')) delete require.cache[file];
   });
+
+  // Baca ulang dan daftarkan semua file di folder routes
+  fs.readdirSync(routesPath).forEach((file) => {
+    if (file.endsWith('.js')) {
+      const routePath = `/api/${file.replace('.js', '')}`;
+      const modulePath = path.join(routesPath, file);
+
+      try {
+        const route = require(modulePath);
+        app.use(routePath, route);
+        console.log(`${chalk.blue('[GET]')} ${routePath} ✅`);
+      } catch (err) {
+        console.error(`❌ Gagal memuat ${file}:`, err);
+      }
+    }
+  });
+
+  console.log(chalk.green('✅ Semua endpoint diperbarui!'));
 }
+
+// Memantau perubahan di folder routes dan melakukan registrasi ulang
+fs.watch(path.join(__dirname, 'routes'), (eventType, filename) => {
+  if (filename && (eventType === 'change' || eventType === 'rename')) {
+    console.log(chalk.green.bold(`Perubahan terdeteksi di file: ${filename}. Registrasi ulang endpoint...`));
+    registerRoutes();
+  }
+});
 
 // Register endpoints dinamis saat server mulai
 registerRoutes();
 
-// Monitor perubahan pada folder routes
-fs.watch(path.join(__dirname, 'routes'), (eventType, filename) => {
-  if (eventType === 'change' || eventType === 'rename') {
-    console.log(`Perubahan terdeteksi pada file: ${filename}`);
-    registerRoutes(); // Daftarkan ulang endpoint
-  }
-});
-
 // Mulai server
-server.listen(port, () => {
+app.listen(port, () => {
   console.log(`Server berjalan di http://localhost:${port}`);
 });

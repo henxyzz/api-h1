@@ -9,6 +9,9 @@
   },
   "dependencies": {
     "axios": "^0.27.2",
+    "chalk": "^4.1.2",
+    "cloudscraper": "^4.6.0",
+    "color": "^4.2.3",
     "colors": "^1.4.0",
     "crypto-js": "^4.1.1",
     "dotenv": "^16.4.7",
@@ -20,8 +23,8 @@
     "request-promise-native": "^1.0.9",
     "stack": "latest",
     "strict": "latest",
-    "yt-search": "^1.0.0",
-    "ws": "^8.8.0"
+    "ws": "^8.8.0",
+    "yt-search": "^1.0.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"
