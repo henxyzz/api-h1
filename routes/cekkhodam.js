@@ -4,6 +4,8 @@ const path = require('path');
 
 const router = express.Router();
 
+router.tags = ["game"];
+
 // Baca file khodam.txt dan simpan daftar ke dalam array
 const khodamFile = path.join(__dirname, '../module/khodam.txt');
 let khodamList = [];

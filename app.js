@@ -1,175 +1,111 @@
-const express = require('express');
-const rateLimit = require('express-rate-limit');
-const multer = require('multer');
-const path = require('path');
-const fs = require('fs');
-const dotenv = require('dotenv');
-const { exec } = require('child_process');
-const chalk = require('chalk'); // Import chalk untuk pewarnaan teks
+const express = require("express");
+const rateLimit = require("express-rate-limit");
+const path = require("path");
+const fs = require("fs");
+const dotenv = require("dotenv");
+const { execSync } = require("child_process");
+const chalk = require("chalk");
 
-// Memuat variabel lingkungan dari file .env
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 8080; // Gunakan port dinamis
+const port = process.env.PORT || 8080;
+const routesDir = path.join(__dirname, "routes");
+const logFile = path.join(__dirname, "log.txt");
 
-// Fungsi untuk memeriksa dan menginstal modul yang hilang
-function checkAndInstallModule(moduleName, callback) {
-  try {
-    require.resolve(moduleName);
-    callback(); // Modul sudah terinstal, lanjutkan proses
-  } catch (e) {
-    if (e.code === 'MODULE_NOT_FOUND') {
-      console.log(`${moduleName} tidak ditemukan, menginstal...`);
-      exec(`npm install ${moduleName}`, (err, stdout, stderr) => {
-        if (err) {
-          console.error(`Error menginstal ${moduleName}:`, stderr);
-          return;
-        }
-        console.log(stdout);
-        callback(); // Lanjutkan setelah instalasi selesai
-      });
-    } else {
-      console.error('Terjadi kesalahan saat memeriksa modul:', e);
-    }
-  }
-}
-
-// Memeriksa dan menginstal modul yang diperlukan
-const requiredModules = ['express', 'express-rate-limit', 'multer', 'chalk']; // Menggunakan chalk untuk warna
-requiredModules.forEach(module => {
-  checkAndInstallModule(module, () => {
-    console.log(`${module} siap digunakan.`);
-  });
-});
-
-// Mengatur rate limiting
 const limiter = rateLimit({
-  windowMs: 60 * 1000, // 1 menit
-  max: 1000, // Maksimal 1000 request per menit
-  message: 'Terlalu banyak request. Coba lagi nanti.',
+  windowMs: 60 * 1000,
+  max: 1000,
+  message: "Terlalu banyak request. Coba lagi nanti.",
 });
 
-app.set('json spaces', 2);
-
-app.use('/api/', limiter); // Gunakan rate limiter untuk semua endpoint API
+app.set("json spaces", 2);
+app.use("/api/", limiter);
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static(path.join(__dirname, "public"))); // Serve static files like index.html and docs.html
 
-// Setup multer untuk mengelola upload file
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => {
-    const destination = req.body.destination || 'public'; // Default ke public jika kosong
-    const folder = destination === 'public' ? 'public' : 'routes';
-    cb(null, path.join(__dirname, folder));
-  },
-  filename: (req, file, cb) => {
-    const customName = req.body.name || file.originalname; // Nama file custom jika diberikan
-    cb(null, customName);
-  },
-});
+// Fungsi clear console
+const clearConsole = () => {
+  process.stdout.write("\x1Bc");
+};
 
-const upload = multer({ storage });
+// Fungsi mencatat log (overwrite setiap update)
+const writeLog = (message) => {
+  const timestamp = new Date().toLocaleString();
+  fs.writeFileSync(logFile, `[${timestamp}] ${message}\n`, "utf8");
+};
 
-// Middleware untuk melayani file statis
-app.use(express.static(path.join(__dirname, 'public')));
+// Fungsi register ulang endpoint dan hitung API berdasarkan tags
+const registerRoutes = () => {
+  clearConsole();
+  app._router.stack = app._router.stack.slice(0, 2); // Reset router kecuali bawaan Express
 
-// Verifikasi password untuk akses halaman upload
-app.get('/upload', (req, res) => {
-  const password = req.query.password; // Mengambil password dari query string
+  console.log(chalk.green("\n✅ Semua endpoint diperbarui!\n"));
+  writeLog("🔄 Semua endpoint diperbarui");
 
-  if (password === process.env.UPLOAD_PASSWORD) {
-    res.sendFile(path.join(__dirname, 'public', 'upload.html')); // Akses halaman upload
-  } else {
-    res.status(403).send('Password salah. Akses ditolak.');
-  }
-});
+  const files = fs.readdirSync(routesDir).filter((file) => file.endsWith(".js"));
 
-// Endpoint untuk menampilkan dokumentasi API
-app.get('/docs', (req, res) => {
-  const routesPath = path.join(__dirname, 'routes');
+  const tagsCount = {};
+  const tagEndpoints = {};
 
-  // Ambil semua file di folder routes
-  fs.readdir(routesPath, (err, files) => {
-    if (err) {
-      console.error('Gagal membaca folder routes:', err);
-      return res.status(500).send('Gagal memuat dokumentasi.');
-    }
+  files.forEach((file) => {
+    const routePath = path.join(routesDir, file);
+    const routeName = `/api/${file.replace(".js", "")}`;
 
-    // Filter file .js dan buat daftar endpoint
-    const apiEndpoints = files
-      .filter((file) => file.endsWith('.js'))
-      .map((file) => `/api/${file.replace('.js', '')}`);
+    try {
+      delete require.cache[require.resolve(routePath)];
+      const routeModule = require(routePath);
+      app.use(routeName, routeModule);
 
-    // Kirim file docs.html dan daftar API ke klien
-    res.sendFile(path.join(__dirname, 'public', 'docs.html'), { headers: { 'x-api-list': JSON.stringify(apiEndpoints) } });
-  });
-});
-
-// Fungsi untuk memperbarui package.json dan menginstal ulang modul
-function updatePackageJson(moduleName, callback) {
-  const packageJsonPath = path.join(__dirname, 'package.json');
-  const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
-
-  if (!packageJson.dependencies) packageJson.dependencies = {};
-  if (!packageJson.dependencies[moduleName]) {
-    packageJson.dependencies[moduleName] = 'latest';
-    fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
-
-    console.log(`Menambahkan ${moduleName} ke package.json dan menjalankan npm install...`);
-    exec('npm install', (err, stdout, stderr) => {
-      if (err) {
-        console.error('Gagal menginstal modul:', err);
-      } else {
-        console.log(stdout);
-        console.error(stderr);
-        callback();
+      if (routeModule.tags) {
+        routeModule.tags.forEach((tag) => {
+          tagsCount[tag] = (tagsCount[tag] || 0) + 1;
+          if (!tagEndpoints[tag]) tagEndpoints[tag] = [];
+          tagEndpoints[tag].push(routeName);
+        });
       }
+
+      console.log(`${chalk.blue("[GET]")} ${routeName} ✅`);
+    } catch (err) {
+      console.error(`${chalk.red("[ERR]")} ${routeName} ❌ ${chalk.red(err.message)}`);
+    }
+  });
+
+  console.log("\n📊 Statistik API berdasarkan Tags:");
+  Object.keys(tagEndpoints).forEach((tag) => {
+    console.log(`${chalk.yellow(tag)}:`);
+    tagEndpoints[tag].forEach((endpoint) => {
+      console.log(`${chalk.blue("[GET]")} ${endpoint}`);
     });
-  } else {
-    callback();
-  }
-}
-
-function registerRoutes() {
-  const routesPath = path.join(__dirname, 'routes');
-
-  // Hapus semua route sebelum daftar ulang
-  Object.keys(require.cache).forEach((file) => {
-    if (file.includes('/routes/')) delete require.cache[file];
+    console.log("");
   });
 
-  // Baca ulang dan daftarkan semua file di folder routes
-  fs.readdirSync(routesPath).forEach((file) => {
-    if (file.endsWith('.js')) {
-      const routePath = `/api/${file.replace('.js', '')}`;
-      const modulePath = path.join(routesPath, file);
+  console.log(chalk.green("\n✅ Semua endpoint siap digunakan!\n"));
+};
 
-      try {
-        const route = require(modulePath);
-        app.use(routePath, route);
-        console.log(`${chalk.blue('[GET]')} ${routePath} ✅`);
-      } catch (err) {
-        console.error(`❌ Gagal memuat ${file}:`, err);
-      }
+// Pantau perubahan di folder routes
+fs.watch(routesDir, (eventType, filename) => {
+  if (filename) {
+    if (filename.endsWith(".swp")) {
+      console.log(chalk.red(`⚠️  File swap terdeteksi: ${filename}. Membersihkan console...`));
+      writeLog(`⚠️  File swap terdeteksi: ${filename}`);
+      clearConsole();
+    } else {
+      console.log(chalk.green(`🔄 Perubahan terdeteksi di file: ${filename}. Registrasi ulang endpoint...`));
+      writeLog(`🔄 Perubahan terdeteksi di file: ${filename}`);
+      registerRoutes();
     }
-  });
-
-  console.log(chalk.green('✅ Semua endpoint diperbarui!'));
-}
-
-// Memantau perubahan di folder routes dan melakukan registrasi ulang
-fs.watch(path.join(__dirname, 'routes'), (eventType, filename) => {
-  if (filename && (eventType === 'change' || eventType === 'rename')) {
-    console.log(chalk.green.bold(`Perubahan terdeteksi di file: ${filename}. Registrasi ulang endpoint...`));
-    registerRoutes();
   }
 });
 
-// Register endpoints dinamis saat server mulai
+// Gunakan app.use untuk serve index.html dan docs.html
+app.use("/", express.static(path.join(__dirname, "public")));  // Serve index.html dan file lain di folder public
+
+// Register routes saat startup
 registerRoutes();
 
-// Mulai server
+// Start server
 app.listen(port, () => {
-  console.log(`Server berjalan di http://localhost:${port}`);
+  console.log(chalk.cyan(`🚀 Server berjalan di http://localhost:${port}`));
 });

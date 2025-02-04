@@ -1,100 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dokumentasi API</title>
-  <style>
-    /* Gaya Umum */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Cyber - Solusi API Terbaik</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        async function loadAPICount() {
+            const response = await fetch("/api/docs");
+            const apis = await response.json();
+            let total = 0;
+            Object.keys(apis).forEach(tag => {
+                total += apis[tag].length;
+            });
+            document.getElementById("api-count").innerText = total;
+        }
 
-    body {
-      font-family: 'Orbitron', sans-serif;
-      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-      color: #fff;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1000px;
-      background: rgba(10, 10, 25, 0.9);
-      border: 2px solid #00ffff;
-      border-radius: 20px;
-      text-align: center;
-      padding: 2rem;
-      position: relative;
-    }
-
-    header h1 {
-      font-size: 3rem;
-      color: #00ffff;
-    }
-
-    header p {
-      margin-top: 0.5rem;
-      font-size: 1.2rem;
-      color: #ff00ff;
-    }
-
-    header button {
-      margin-top: 1.5rem;
-      padding: 0.8rem 2rem;
-      font-size: 1rem;
-      font-weight: bold;
-      color: #0f0c29;
-      background: linear-gradient(90deg, #00ffff, #ff00ff);
-      border: none;
-      border-radius: 50px;
-      cursor: pointer;
-      transition: transform 0.3s;
-    }
-
-    header button:hover {
-      transform: scale(1.1);
-    }
-
-    .content {
-      margin-top: 2rem;
-    }
-
-    .content h2 {
-      font-size: 2.5rem;
-      color: #ff00ff;
-    }
-
-    .content p {
-      font-size: 1.2rem;
-      color: #ccc;
-      margin-top: 1rem;
-    }
-
-    /* Gaya Border */
-    .container {
-      border-image-source: linear-gradient(90deg, #00ffff, #ff00ff);
-      border-image-slice: 1;
-    }
-  </style>
+        window.onload = loadAPICount;
+    </script>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>API AZATXYZ</h1>
-      <p>Jelajahi layanan API Azatxyz</p>
-      <button onclick="window.location.href='/docs'">LIHAT DOKUMENTASI</button>
-    </header>
-    <section class="content">
-      <h2>Welcome</h2>
-      <p>Rasakan pengalaman dengan layanan API Gratis. Klik tombol di atas untuk menjelajahi dokumentasi lengkap.</p>
-    </section>
-  </div>
+    <div class="hero">
+        <h1>🚀 API Cyber</h1>
+        <p>Solusi API tercepat, modern, dan terpercaya untuk kebutuhan data Anda.</p>
+        <a href="/docs" class="button">📖 Lihat Dokumentasi</a>
+    </div>
+
+    <div class="container">
+        <h2>Kenapa Memilih API Cyber?</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>⚡ Performa Tinggi</h3>
+                <p>API kami dirancang untuk kecepatan dan efisiensi maksimal.</p>
+            </div>
+            <div class="feature">
+                <h3>🔒 Keamanan Terjamin</h3>
+                <p>Dilengkapi dengan sistem keamanan modern untuk melindungi data Anda.</p>
+            </div>
+            <div class="feature">
+                <h3>🔄 Update Otomatis</h3>
+                <p>Endpoint API selalu diperbarui untuk memastikan akurasi data.</p>
+            </div>
+            <div class="feature">
+                <h3>📡 Akses Fleksibel</h3>
+                <p>Dapat digunakan untuk berbagai kebutuhan, mulai dari aplikasi hingga analisis data.</p>
+            </div>
+        </div>
+
+        <h2>Statistik API</h2>
+        <p><strong>Total API yang tersedia:</strong> <span id="api-count">Memuat...</span></p>
+
+        <h2>Mulai Sekarang!</h2>
+        <p>Gunakan API Cyber dan tingkatkan efisiensi aplikasi Anda. Klik tombol di bawah untuk melihat daftar API yang tersedia.</p>
+        <a href="/docs" class="button">📜 Jelajahi API</a>
+    </div>
 </body>
 </html>

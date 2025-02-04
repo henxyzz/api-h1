@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
+router.tags = ["game"];
+
 // Daftar tebakan negara (100 negara)
 const tebaknegaraList = [
   { question: 'Negara ini terkenal dengan piramida dan sungai Nil. Apa nama negara ini?', answer: 'Mesir', clue: 'Negara ini memiliki banyak piramida terkenal.' },

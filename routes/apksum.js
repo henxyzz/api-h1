@@ -3,6 +3,8 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const router = express.Router();
 
+router.tags = ["apk"];
+
 // Konstanta URL dan cookies
 const BASE_URL = "https://m.apksum.com/search?q=";
 const COOKIES = {

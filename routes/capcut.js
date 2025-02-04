@@ -5,6 +5,8 @@ const router = express.Router();
 
 const BASE_URL = 'https://3bic.com';
 
+router.tags = ["downloader"];
+
 router.get('/api/capcut', async (req, res) => {
   const link = req.query.url?.trim();
 

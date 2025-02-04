@@ -2,6 +2,8 @@ const express = require('express');
 const axios = require('axios');
 const router = express.Router();
 
+router.tags = ["stiker"];
+
 const BASE_URL = 'https://brat.caliphdev.com/api/brat';
 
 // Endpoint Brat API menggunakan query parameter biasa

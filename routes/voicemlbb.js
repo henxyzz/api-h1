@@ -4,6 +4,8 @@ const cheerio = require('cheerio');
 const path = require('path');
 const router = express.Router();
 
+router.tags = ["search"];
+
 // Fungsi untuk mengambil suara dan judul berdasarkan hero dan bahasa
 const getVoiceData = async (hero, language) => {
   try {

@@ -3,6 +3,8 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const router = express.Router();
 
+router.tags = ["search"];
+
 // Fungsi untuk mengambil detail plugin
 async function bukkitDetail(url) {
     try {

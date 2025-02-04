@@ -4,6 +4,8 @@ const cheerio = require('cheerio');
 const FormData = require('form-data');
 const router = express.Router();
 
+router.tags = ["maker"];
+
 const links = {
     glitchtext: 'https://en.ephoto360.com/create-digital-glitch-text-effects-online-767.html',
     writetext: 'https://en.ephoto360.com/write-text-on-wet-glass-online-589.html',

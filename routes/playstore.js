@@ -3,6 +3,8 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const router = express.Router();
 
+router.tags = ["apk"];
+
 // Fungsi untuk mencari aplikasi di Play Store
 async function playStoreSearch(search) {
   return new Promise(async (resolve, reject) => {

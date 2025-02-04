@@ -3,6 +3,8 @@ const fs = require('fs');
 const path = require('path');
 const router = express.Router();
 
+router.tags = ["fun"];
+
 // Fungsi untuk memeriksa zodiak berdasarkan bulan dan tanggal
 function getZodiac(month, day) {
   const zodiakPath = path.join(__dirname, '../module/zodiak.txt');

@@ -3,6 +3,8 @@ const cheerio = require('cheerio');
 const express = require('express');
 const router = express.Router();
 
+router.tags = ["apk"];
+
 // Fungsi untuk memberi delay
 const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 

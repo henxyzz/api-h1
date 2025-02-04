@@ -3,6 +3,8 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const router = express.Router();
 
+router.tags = ["info"];
+
 // Endpoint untuk mendapatkan daftar turnamen
 router.get('/', async (req, res) => {
   try {

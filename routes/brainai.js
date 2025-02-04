@@ -1,6 +1,9 @@
+
 const express = require('express');
 const axios = require('axios');
 const router = express.Router();
+
+router.tags = ["ai"];
 
 async function powerbrain(question) {
     const data = `message=${encodeURIComponent(question)}&messageCount=1`;
