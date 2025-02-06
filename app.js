@@ -1,27 +1,25 @@
-const express = require('express');
-const rateLimit = require('express-rate-limit');
-const multer = require('multer');
-const path = require('path');
-const fs = require('fs');
-const dotenv = require('dotenv');
-const { exec } = require('child_process');
-const chalk = require('chalk');
+const express = require("express");
+const rateLimit = require("express-rate-limit");
+const multer = require("multer");
+const path = require("path");
+const fs = require("fs");
+const dotenv = require("dotenv");
+const { exec } = require("child_process");
+const chalk = require("chalk");
 
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT || 8000;
-const logFilePath = path.join(__dirname, 'server.log');
+const port = process.env.PORT || 8080;
+const logFilePath = path.join(__dirname, "server.log");
 
 // === Fungsi Logging ===
-function logMessage(message, type = 'info') {
+function logMessage(message, type = "info") {
     const timestamp = new Date().toISOString();
     const logEntry = `[${timestamp}] ${message}\n`;
 
-    // Simpan log ke file
-    fs.appendFileSync(logFilePath, logEntry, 'utf8');
+    fs.appendFileSync(logFilePath, logEntry, "utf8");
 
-    // Tampilkan log ke terminal dengan warna
     const colors = {
         info: chalk.blue,
         success: chalk.green,
@@ -32,147 +30,149 @@ function logMessage(message, type = 'info') {
     console.log(colors[type](logEntry.trim()));
 }
 
-// Middleware untuk mencatat setiap request
+// Middleware Logging
 app.use((req, res, next) => {
-    logMessage(`📡 ${req.method} ${req.url}`, 'info');
+    logMessage(`📡 ${req.method} ${req.url}`, "info");
     next();
 });
 
-// Mengatur rate limiting
-const limiter = rateLimit({
-    windowMs: 60 * 1000,
-    max: 1000,
-    message: 'Terlalu banyak request. Coba lagi nanti.',
-});
+// === Auto Install Module ===
+process.on("uncaughtException", (err) => {
+    if (err.code === "MODULE_NOT_FOUND") {
+        const moduleName = err.message.split("'")[1];
 
-app.set('json spaces', 2);
-app.use('/api/', limiter);
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
+        logMessage(`⚠️ Module ${moduleName} tidak ditemukan. Menginstal...`, "warning");
 
-// Setup multer untuk mengelola upload file
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        const destination = req.body.destination || 'public';
-        const folder = destination === 'public' ? 'public' : 'routes';
-        cb(null, path.join(__dirname, folder));
-    },
-    filename: (req, file, cb) => {
-        const customName = req.body.name || file.originalname;
-        cb(null, customName);
-    },
-});
-
-const upload = multer({ storage });
-
-// Middleware untuk melayani file statis
-app.use(express.static(path.join(__dirname, 'public')));
-
-// Verifikasi password untuk akses halaman upload
-app.get('/upload', (req, res) => {
-    const password = req.query.password;
-    if (password === process.env.UPLOAD_PASSWORD) {
-        res.sendFile(path.join(__dirname, 'public', 'upload.html'));
+        exec(`npm install ${moduleName}`, (installErr, stdout, stderr) => {
+            if (installErr) {
+                logMessage(`❌ Gagal menginstal ${moduleName}: ${stderr}`, "error");
+            } else {
+                logMessage(`✅ Module ${moduleName} berhasil diinstal. Restart server...`, "success");
+                process.exit(1);
+            }
+        });
     } else {
-        res.status(403).send('Password salah. Akses ditolak.');
+        logMessage(`❌ Error tidak terduga: ${err.message}`, "error");
     }
 });
 
-// Endpoint untuk dokumentasi API
-app.get('/docs', (req, res) => {
-    const routesPath = path.join(__dirname, 'routes');
+// === Rate Limit ===
+const limiter = rateLimit({
+    windowMs: 60 * 1000,
+    max: 1000,
+    message: "Terlalu banyak request. Coba lagi nanti.",
+});
 
-    fs.readdir(routesPath, (err, files) => {
+app.set("json spaces", 2);
+app.use("/api/", limiter);
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+// === Middleware Upload ===
+const storage = multer.diskStorage({
+    destination: (req, file, cb) => {
+        const folder = req.body.destination || "public";
+        cb(null, path.join(__dirname, folder));
+    },
+    filename: (req, file, cb) => {
+        cb(null, req.body.name || file.originalname);
+    },
+});
+const upload = multer({ storage });
+app.use(upload.any()); // Middleware upload global
+
+// === Serve Static Files ===
+app.use(express.static(path.join(__dirname, "public")));
+
+// === Halaman Upload ===
+app.get("/upload", (req, res) => {
+    const password = req.query.password;
+    if (password === process.env.UPLOAD_PASSWORD) {
+        res.sendFile(path.join(__dirname, "public", "upload.html"));
+    } else {
+        res.status(403).send("Password salah. Akses ditolak.");
+    }
+});
+
+// ====================== 🔥 API LOG CONSOLE 🔥 ======================
+
+// Endpoint untuk mendapatkan semua log dalam bentuk JSON
+app.get('/api/logs', (req, res) => {
+    fs.readFile(logFilePath, 'utf8', (err, data) => {
         if (err) {
-            logMessage('❌ Gagal membaca folder routes', 'error');
-            return res.status(500).send('Gagal memuat dokumentasi.');
+            logMessage('❌ Gagal membaca log!', 'error');
+            return res.status(500).json({ error: 'Gagal membaca log.' });
         }
 
-        const apiEndpoints = files
-            .filter((file) => file.endsWith('.js'))
-            .map((file) => `/api/${file.replace('.js', '')}`);
-
-        res.sendFile(path.join(__dirname, 'public', 'docs.html'), { headers: { 'x-api-list': JSON.stringify(apiEndpoints) } });
+        const logs = data.split('\n').filter(line => line); // Hapus baris kosong
+        res.json({ logs });
     });
 });
 
-// Endpoint untuk menampilkan halaman log
+// Endpoint untuk melihat log langsung di browser
 app.get('/logs', (req, res) => {
     res.sendFile(path.join(__dirname, 'public', 'logs.html'));
 });
 
-// Endpoint API untuk mendapatkan log
-app.get('/api/logs', (req, res) => {
-    fs.readFile(logFilePath, 'utf8', (err, data) => {
-        if (err) {
-            return res.status(500).json(['Gagal membaca log.']);
+// === API Documentation Endpoint ===
+app.get("/api/docs", (req, res) => {
+    const routesPath = path.join(__dirname, "routes");
+    let apiDocs = {};
+
+    fs.readdirSync(routesPath).forEach((file) => {
+        if (file.endsWith(".js")) {
+            const route = require(path.join(routesPath, file));
+
+            if (route.tags) {
+                route.tags.forEach((tag) => {
+                    if (!apiDocs[tag]) apiDocs[tag] = [];
+                    apiDocs[tag].push(`/api/${file.replace(".js", "")}`);
+                });
+            }
         }
-        res.json(data.split('\n').filter(line => line));
     });
+
+    res.json(apiDocs);
 });
 
-// Fungsi untuk memperbarui package.json dan menginstal ulang modul
-function updatePackageJson(moduleName, callback) {
-    const packageJsonPath = path.join(__dirname, 'package.json');
-    const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'));
-
-    if (!packageJson.dependencies) packageJson.dependencies = {};
-    if (!packageJson.dependencies[moduleName]) {
-        packageJson.dependencies[moduleName] = 'latest';
-        fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
-
-        logMessage(`📦 Menambahkan ${moduleName} ke package.json dan menjalankan npm install...`, 'info');
-        exec('npm install', (err, stdout, stderr) => {
-            if (err) {
-                logMessage(`❌ Gagal menginstal ${moduleName}: ${stderr}`, 'error');
-            } else {
-                console.log(stdout);
-                console.error(stderr);
-                callback();
-            }
-        });
-    } else {
-        callback();
-    }
-}
-
+// === Load Routes Otomatis ===
 function registerRoutes() {
-    const routesPath = path.join(__dirname, 'routes');
+    const routesPath = path.join(__dirname, "routes");
 
     Object.keys(require.cache).forEach((file) => {
-        if (file.includes('/routes/')) delete require.cache[file];
+        if (file.includes("/routes/")) delete require.cache[file];
     });
 
     fs.readdirSync(routesPath).forEach((file) => {
-        if (file.endsWith('.js')) {
-            const routePath = `/api/${file.replace('.js', '')}`;
+        if (file.endsWith(".js")) {
+            const routePath = `/api/${file.replace(".js", "")}`;
             const modulePath = path.join(routesPath, file);
 
             try {
                 const route = require(modulePath);
                 app.use(routePath, route);
-                logMessage(`${chalk.blue('[GET]')} ${routePath} ✅`, 'success');
+                logMessage(`${chalk.blue("[GET]")} ${routePath} ✅`, "success");
             } catch (err) {
-                logMessage(`❌ Gagal memuat ${file}: ${err.message}`, 'error');
+                logMessage(`❌ Gagal memuat ${file}: ${err.message}`, "error");
             }
         }
     });
 
-    logMessage('✅ Semua endpoint diperbarui!', 'success');
+    logMessage("✅ Semua endpoint diperbarui!", "success");
 }
 
-// Memantau perubahan di folder routes
-fs.watch(path.join(__dirname, 'routes'), (eventType, filename) => {
-    if (filename && (eventType === 'change' || eventType === 'rename')) {
-        logMessage(`🔄 Perubahan terdeteksi di ${filename}, mereload endpoint...`, 'warning');
+// === Watch Changes di Routes ===
+fs.watch(path.join(__dirname, "routes"), (eventType, filename) => {
+    if (filename && (eventType === "change" || eventType === "rename")) {
+        logMessage(`🔄 Perubahan terdeteksi di ${filename}, mereload endpoint...`, "warning");
         registerRoutes();
     }
 });
 
-// Register routes saat server mulai
+// === Daftarkan Routes saat Server Mulai ===
 registerRoutes();
 
-// Mulai server
+// === Jalankan Server ===
 app.listen(port, () => {
-    logMessage(`🚀 Server berjalan di http://localhost:${port}`, 'success');
+    logMessage(`🚀 Server berjalan di http://localhost:${port}`, "success");
 });
