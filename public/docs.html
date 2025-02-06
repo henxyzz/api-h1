@@ -3,8 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dokumentasi API</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>📡 API Control Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+    color: #00ffea;
+}
+
+body {
+    background-color: #080f1f;
+    text-align: center;
+    padding: 20px;
+    overflow: hidden;
+}
+
+/* Header */
+h1 {
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #00ffea, 0 0 20px #00bcd4;
+    animation: glitch 1.5s infinite;
+}
+
+/* Glitch Effect */
+@keyframes glitch {
+    0% { text-shadow: 0px 0px 5px #00ffea; }
+    50% { text-shadow: 2px 2px 10px #00bcd4; }
+    100% { text-shadow: 0px 0px 5px #00ffea; }
+}
+
+/* API List */
+#api-list {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px #00ffea;
+}
+
+/* API Section */
+.api-section {
+    margin: 20px 0;
+    padding: 10px;
+    border-left: 5px solid #00ffea;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+/* API Links */
+.api-section a {
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.api-section a:hover {
+    color: #ff4081;
+    text-shadow: 0 0 5px #ff4081, 0 0 10px #ff4081;
+}
+
+/* Try Button */
+.try-btn {
+    background: #00ffea;
+    color: #080f1f;
+    border: none;
+    padding: 8px 15px;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.try-btn:hover {
+    background: #ff4081;
+    color: white;
+    box-shadow: 0 0 10px #ff4081;
+    transform: scale(1.1);
+    }
+    </style>
     <script>
         async function loadAPIs() {
             const response = await fetch("/api/docs");
@@ -38,7 +120,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>📑 Dokumentasi API</h1>
+        <h1>📡 API CONTROL CENTER</h1>
         <div id="api-list">Memuat API...</div>
     </div>
 </body>
