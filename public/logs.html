@@ -3,98 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Server Logs</title>
+    <title>📜 Server Logs</title>
     <style>
-        /* === CYBER DARK MODE === */
-        body {
-            font-family: "Arial", sans-serif;
-            background: #0d1117;
-            color: #c9d1d9;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        }
+        /* Log Container */
+#log-container {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 8px;
+    height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 0 10px #00ffea;
+    text-align: left;
+}
 
-        h1 {
-            color: #58a6ff;
-            font-size: 24px;
-            text-transform: uppercase;
-            margin-bottom: 10px;
-        }
+/* Log Entry */
+.log-entry {
+    font-size: 0.9em;
+    padding: 5px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
 
-        .log-container {
-            width: 90%;
-            max-width: 800px;
-            height: 400px;
-            overflow-y: auto;
-            background: #161b22;
-            border: 1px solid #30363d;
-            border-radius: 8px;
-            padding: 15px;
-            box-shadow: 0px 0px 15px rgba(88, 166, 255, 0.2);
-        }
-
-        .log-container pre {
-            font-size: 14px;
-            white-space: pre-wrap;
-            word-wrap: break-word;
-        }
-
-        .refresh-btn {
-            margin-top: 15px;
-            background: #238636;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 14px;
-            transition: background 0.3s ease;
-        }
-
-        .refresh-btn:hover {
-            background: #2ea043;
-        }
-
-        .status {
-            margin-top: 10px;
-            font-size: 12px;
-            color: #8b949e;
-        }
+.log-entry:hover {
+    background: rgba(0, 255, 234, 0.1);
+    cursor: pointer;
+}
     </style>
+    <script>
+        async function loadLogs() {
+            const response = await fetch("/api/logs");
+            const data = await response.json();
+            const container = document.getElementById("log-container");
+
+            container.innerHTML = "";
+            if (data.logs) {
+                data.logs.forEach(log => {
+                    const logEntry = document.createElement("p");
+                    logEntry.textContent = log;
+                    logEntry.classList.add("log-entry");
+                    container.appendChild(logEntry);
+                });
+            } else {
+                container.innerHTML = "<p>🚫 Tidak ada log ditemukan!</p>";
+            }
+        }
+
+        setInterval(loadLogs, 3000); // Auto-refresh setiap 3 detik
+        window.onload = loadLogs;
+    </script>
 </head>
 <body>
-
-    <h1>📜 Server Logs</h1>
-    <div class="log-container">
-        <pre id="log-content">Memuat log...</pre>
+    <div class="container">
+        <h1>📜 Server Logs</h1>
+        <div id="log-container">Memuat log...</div>
     </div>
-    <button class="refresh-btn" onclick="loadLogs()">🔄 Refresh Logs</button>
-    <p class="status" id="status"></p>
-
-    <script>
-        function loadLogs() {
-            fetch("/api/logs")
-                .then(response => response.json())
-                .then(data => {
-                    document.getElementById("log-content").innerText = data.join("\n") || "Log kosong.";
-                    document.getElementById("status").innerText = "✅ Terakhir diperbarui: " + new Date().toLocaleTimeString();
-                    const container = document.querySelector(".log-container");
-                    container.scrollTop = container.scrollHeight;
-                })
-                .catch(error => {
-                    document.getElementById("status").innerText = "⚠️ Gagal memuat log.";
-                });
-        }
-
-        // Auto-refresh log setiap 3 detik
-        setInterval(loadLogs, 3000);
-        loadLogs();
-    </script>
-
 </body>
 </html>
