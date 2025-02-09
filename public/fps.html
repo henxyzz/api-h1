@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk Video FPS Enhancer</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+        body {
+            font-family: 'Orbitron', sans-serif;
+            background: #0d0d0d;
+            color: #0ff;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            background: rgba(0, 255, 255, 0.1);
+            border: 2px solid #0ff;
+            padding: 20px;
+            border-radius: 10px;
+            width: 50%;
+            margin: auto;
+            box-shadow: 0 0 10px #0ff;
+        }
+        h1 {
+            color: #ff0077;
+            text-shadow: 0 0 10px #ff0077;
+        }
+        input, button {
+            margin-top: 10px;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            outline: none;
+            background: #ff0077;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #ff44aa;
+        }
+        .progress {
+            width: 100%;
+            height: 10px;
+            background: rgba(0, 255, 255, 0.3);
+            border-radius: 5px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+        #progressBar {
+            width: 0%;
+            height: 100%;
+            background: #0ff;
+            transition: width 0.3s;
+        }
+        #result {
+            margin-top: 20px;
+        }
+        video {
+            width: 100%;
+            margin-top: 10px;
+            border: 2px solid #ff0077;
+            box-shadow: 0 0 10px #ff0077;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎥 Cyberpunk AI Video FPS Enhancer</h1>
+        <input type="file" id="fileInput" accept="video/*">
+        <button onclick="uploadVideo()">Upload & Proses</button>
+        <div class="progress">
+            <div id="progressBar"></div>
+        </div>
+        <div id="result"></div>
+    </div>
+    <script>
+        function uploadVideo() {
+            const fileInput = document.getElementById("fileInput");
+            if (!fileInput.files.length) return alert("Pilih video dulu!");
+
+            const formData = new FormData();
+            formData.append("video", fileInput.files[0]);
+
+            const progressBar = document.getElementById("progressBar");
+            progressBar.style.width = "0%";
+
+            document.getElementById("result").innerHTML = "Memproses...";
+
+            fetch("https://8000-henxyzz-apih1-luus0t3mj88.ws-us117.gitpod.io/api/smooth-video", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) throw new Error(data.error);
+                document.getElementById("result").innerHTML = 
+                    `<video controls><source src="https://8000-henxyzz-apih1-luus0t3mj88.ws-us117.gitpod.io/outputs/${data.url}" type="video/mp4"></video>`;
+            })
+            .catch(error => {
+                document.getElementById("result").innerHTML = "Error: " + error.message;
+            });
+
+            let width = 0;
+            const interval = setInterval(() => {
+                if (width >= 100) clearInterval(interval);
+                else {
+                    width += 10;
+                    progressBar.style.width = width + "%";
+                }
+            }, 500);
+        }
+    </script>
+</body>
+</html>

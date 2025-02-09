@@ -1,0 +1,2189 @@
+[2025-02-07T09:21:58.240Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T09:21:58.256Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T09:21:58.257Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T09:21:58.257Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T09:21:58.258Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T09:21:58.259Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T09:21:58.262Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T09:21:58.262Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T09:21:58.263Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T09:21:58.263Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T09:21:58.277Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T09:21:58.278Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T09:21:58.278Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T09:21:58.279Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T09:21:58.279Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T09:21:58.280Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T09:21:58.280Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T09:21:58.281Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T09:21:58.281Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T09:21:58.282Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T09:21:58.282Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T09:21:58.282Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T09:21:58.285Z] 🚀 Server berjalan di http://localhost:8080
+[2025-02-07T09:23:44.793Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T09:23:44.808Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T09:23:44.808Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T09:23:44.809Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T09:23:44.809Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T09:23:44.811Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T09:23:44.812Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T09:23:44.812Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T09:23:44.813Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T09:23:44.813Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T09:23:44.828Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T09:23:44.829Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T09:23:44.830Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T09:23:44.830Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T09:23:44.831Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T09:23:44.831Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T09:23:44.832Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T09:23:44.832Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T09:23:44.833Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T09:23:44.833Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T09:23:44.834Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T09:23:44.834Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T09:23:44.836Z] ❌ Error tidak terduga: listen EADDRINUSE: address already in use :::8080
+[2025-02-07T09:24:50.913Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T09:24:50.928Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T09:24:50.929Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T09:24:50.929Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T09:24:50.930Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T09:24:50.932Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T09:24:50.932Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T09:24:50.933Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T09:24:50.934Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T09:24:50.934Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T09:24:50.949Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T09:24:50.950Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T09:24:50.951Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T09:24:50.951Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T09:24:50.952Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T09:24:50.952Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T09:24:50.953Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T09:24:50.953Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T09:24:50.954Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T09:24:50.954Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T09:24:50.954Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T09:24:50.955Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T09:24:50.957Z] ❌ Error tidak terduga: listen EADDRINUSE: address already in use :::8080
+[2025-02-07T09:25:49.487Z] 📡 GET /
+[2025-02-07T09:25:49.760Z] 📡 GET /css/index.css
+[2025-02-07T09:25:50.015Z] 📡 GET /api/docs
+[2025-02-07T09:25:50.133Z] 📡 GET /favicon.ico
+[2025-02-07T09:25:52.307Z] 📡 GET /docs
+[2025-02-07T09:25:54.076Z] 📡 GET /docs
+[2025-02-07T09:25:58.073Z] 📡 GET /docs
+[2025-02-07T09:45:41.258Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T09:45:41.273Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T09:45:41.274Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T09:45:41.274Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T09:45:41.275Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T09:45:41.279Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T09:45:41.279Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T09:45:41.280Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T09:45:41.281Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T09:45:41.282Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T09:45:41.297Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T09:45:41.298Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T09:45:41.298Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T09:45:41.299Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T09:45:41.300Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T09:45:41.301Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T09:45:41.302Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T09:45:41.302Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T09:45:41.303Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T09:45:41.303Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T09:45:41.304Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T09:45:41.304Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T09:45:41.306Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-07T09:57:54.525Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T09:57:54.527Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-07T10:02:43.415Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:02:43.415Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:02:43.416Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:02:43.416Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:02:43.416Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:02:43.416Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:02:43.417Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:02:43.417Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:02:43.417Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:02:43.418Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:02:43.418Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:02:43.418Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:02:43.418Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:02:43.419Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:02:43.419Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:02:43.419Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:02:43.420Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:02:43.420Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:02:43.420Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:02:43.420Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:02:43.420Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:02:43.421Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:02:43.421Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:02:43.422Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:02:43.422Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:02:43.422Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:02:43.422Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:02:43.423Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:02:43.423Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:02:43.423Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:02:43.423Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:02:43.424Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:02:43.424Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:02:43.424Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:02:43.424Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:02:43.424Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:02:43.425Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:02:43.425Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:02:43.425Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:02:43.425Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:02:43.426Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:02:43.426Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:02:43.426Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:02:43.426Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:02:43.427Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:02:43.427Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:02:43.427Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:02:43.427Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:02:43.428Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:02:43.428Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:02:46.184Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:02:46.184Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:02:46.185Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:02:46.185Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:02:46.185Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:02:46.185Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:02:46.186Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:02:46.186Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:02:46.186Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:02:46.187Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:02:46.187Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:02:46.187Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:02:46.188Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:02:46.189Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:02:46.189Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:02:46.189Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:02:46.189Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:02:46.189Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:02:46.189Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:02:46.190Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:02:46.190Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:02:46.190Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:02:46.190Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:02:46.191Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:02:46.191Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:02:46.191Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:02:46.191Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:02:46.192Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:02:46.192Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:02:46.192Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:02:46.192Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:02:46.193Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:02:46.193Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:02:46.193Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:02:46.193Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:02:46.194Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:02:46.194Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:02:46.194Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:02:46.194Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:02:46.194Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:02:46.194Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:02:46.195Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:02:46.195Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:02:46.195Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:02:46.195Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:02:46.196Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:02:46.196Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:02:46.196Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:02:46.196Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:02:46.197Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:02:46.197Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:02:46.197Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:02:46.197Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:02:46.198Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:02:46.198Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:02:46.198Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:02:46.198Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:02:46.199Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:02:46.199Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:02:46.199Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:02:46.200Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:02:46.200Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:02:46.200Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:02:46.200Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:02:46.201Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:02:46.201Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:02:46.201Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:02:46.201Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:02:46.202Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:02:46.202Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:02:46.202Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:02:46.202Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:02:46.203Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:02:46.203Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:02:46.203Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:03:31.595Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T10:03:31.595Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T10:03:31.595Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:03:31.596Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:03:31.596Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:03:31.596Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:03:31.597Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:03:31.597Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:03:31.597Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:03:31.598Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:03:31.598Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:03:31.598Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:03:31.599Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:03:31.599Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:03:31.599Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:03:31.600Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:03:31.600Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:03:31.600Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:03:31.601Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:03:31.601Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:03:31.601Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:03:31.601Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T10:03:31.602Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:03:31.603Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:03:31.603Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:03:31.603Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:03:31.603Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:03:31.604Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:03:31.604Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:03:31.604Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T10:03:31.604Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:03:31.605Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:03:31.605Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:03:31.605Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:03:31.605Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:03:31.606Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:03:31.606Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:03:31.606Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:03:31.606Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:03:31.606Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:03:31.607Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:03:31.607Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:03:31.607Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:03:31.607Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:03:31.608Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:03:31.608Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:03:31.608Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:03:31.609Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:03:31.609Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:03:31.609Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:03:31.609Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:03:31.610Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:03:31.610Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:03:31.610Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:03:31.610Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:03:31.610Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:03:31.611Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:03:31.611Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:03:31.611Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:03:31.611Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:03:31.612Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:03:31.612Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:03:31.612Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:03:31.612Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:03:31.613Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:03:31.613Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:03:31.613Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:03:31.614Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:03:31.615Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:03:31.615Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:03:31.615Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:03:31.616Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:03:31.616Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:03:31.616Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:03:31.616Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:03:31.617Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:03:31.617Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:03:31.617Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:03:31.618Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:03:31.618Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:03:31.618Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:09:45.738Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:09:45.760Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:09:45.762Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-07T10:12:04.916Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:12:04.938Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:12:04.940Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-07T10:12:26.807Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T10:12:26.808Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T10:12:26.808Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:12:26.808Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:12:26.809Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:12:26.809Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:12:26.809Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:12:26.810Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:12:26.810Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:12:26.810Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:12:26.810Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:12:26.810Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:12:26.811Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:12:26.811Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:12:26.811Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:12:26.811Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:12:26.812Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:12:26.812Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:12:26.812Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:12:26.813Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:12:26.813Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:12:26.813Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:12:26.813Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:12:26.814Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:12:26.814Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:12:31.340Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:12:31.340Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:12:31.341Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:12:31.342Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:12:31.342Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:12:31.342Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:12:31.342Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:12:31.342Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:12:31.343Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:12:31.343Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:12:31.343Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:12:31.343Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:12:31.344Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:12:31.344Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:12:31.344Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:12:31.344Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:12:31.345Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:12:31.345Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:12:31.345Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:12:31.345Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:12:31.345Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:12:31.346Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:12:31.346Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:12:31.346Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:12:31.346Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:12:31.346Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:12:31.346Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:12:31.346Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:12:31.347Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:12:31.347Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:12:31.347Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:12:31.347Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:12:31.347Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:12:31.348Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:12:31.348Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:12:31.348Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:12:31.348Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:12:31.348Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:12:31.349Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:12:31.349Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:12:31.349Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:12:31.349Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:12:31.350Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:12:31.350Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:12:31.351Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:12:31.351Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:12:31.351Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:12:31.351Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:12:31.351Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:12:31.351Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:12:51.192Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:12:51.192Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:12:51.193Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:12:51.193Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:12:51.194Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:12:51.194Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:12:51.194Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:12:51.194Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:12:51.195Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:12:51.195Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:12:51.195Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:12:51.195Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:12:51.196Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:12:51.196Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:12:51.196Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:12:51.196Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:12:51.196Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:12:51.197Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:12:51.197Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:12:51.197Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:12:51.197Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:12:51.197Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:12:51.198Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:12:51.198Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:12:51.198Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:12:51.198Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:12:51.198Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:12:51.198Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:12:51.198Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:12:51.199Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:12:51.199Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:12:51.199Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:12:51.199Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:12:51.200Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:12:51.200Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:12:51.201Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:12:51.201Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:12:51.201Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:12:51.201Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:12:51.202Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:12:51.202Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:12:51.202Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:12:51.202Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:12:51.202Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:12:51.202Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:12:51.203Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:12:51.203Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:12:51.203Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:12:51.204Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:12:51.204Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:12:51.204Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:12:51.204Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:12:51.204Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:12:51.205Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:12:51.205Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:12:51.205Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:12:51.205Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:12:51.205Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:12:51.205Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:12:51.206Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:12:51.206Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:12:51.206Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:12:51.206Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:12:51.206Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:12:51.207Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:12:51.207Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:12:51.207Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:12:51.207Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:12:51.208Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:12:51.208Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:12:51.208Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:12:51.208Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:12:51.208Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:12:51.209Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:12:51.209Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:12:56.947Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T10:12:56.947Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T10:12:56.948Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:12:56.948Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:12:56.948Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:12:56.949Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:12:56.949Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:12:56.949Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:12:56.949Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:12:56.949Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:12:56.950Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:12:56.950Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:12:56.950Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:12:56.950Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:12:56.951Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:12:56.951Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:12:56.951Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:12:56.951Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:12:56.951Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:12:56.952Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:12:56.952Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:12:56.952Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:12:56.952Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:12:56.952Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:12:56.953Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:12:56.953Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:12:56.953Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T10:12:56.953Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:12:56.953Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:12:56.953Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:12:56.954Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:12:56.954Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T10:12:56.954Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:12:56.954Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:12:56.954Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:12:56.954Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:12:56.955Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:12:56.955Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:12:56.955Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:12:56.955Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:12:56.955Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:12:56.956Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:12:56.956Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:12:56.956Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:12:56.957Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:12:56.957Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:12:56.957Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:12:56.957Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:12:56.958Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:12:56.958Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:12:56.958Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:12:56.958Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:12:56.958Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:12:56.958Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:12:56.959Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:12:56.959Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:12:56.959Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:12:56.959Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:12:56.959Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:12:56.960Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:12:56.960Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:12:56.960Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:12:56.960Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:12:56.960Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:12:56.961Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:12:56.961Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:12:56.961Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:12:56.961Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:12:56.961Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:12:56.962Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:12:56.962Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:12:56.962Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:12:56.962Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:12:56.962Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:12:56.963Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:12:56.963Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:12:56.963Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:12:56.963Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:12:56.964Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:12:56.964Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:12:56.964Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:15:16.106Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:15:16.128Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:15:16.130Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-07T10:18:45.121Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:18:45.148Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:18:45.150Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-07T10:19:13.579Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T10:19:13.579Z] 🔄 Perubahan terdeteksi di hdr.js, memeriksa modul baru...
+[2025-02-07T10:19:13.580Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:19:13.580Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:19:13.581Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:19:13.581Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:19:13.581Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T10:19:13.581Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:19:13.581Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:19:13.582Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:19:13.582Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:19:13.582Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:19:13.582Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:19:13.583Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:19:13.583Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:19:13.583Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:19:13.584Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:19:13.584Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:19:13.584Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:19:13.585Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:19:13.585Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:19:13.585Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:19:13.585Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:19:13.586Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:19:13.586Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:19:13.586Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:19:26.744Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, memeriksa modul baru...
+[2025-02-07T10:19:26.744Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:19:26.745Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:19:26.745Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:19:26.745Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:19:26.745Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:19:26.746Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:19:26.746Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:19:26.746Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:19:26.746Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:19:26.746Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:19:26.747Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:19:26.747Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:19:26.747Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:19:26.747Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:19:26.747Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:19:26.748Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:19:26.749Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:19:26.749Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:19:26.749Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:19:26.749Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:19:26.749Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:19:26.750Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:19:26.750Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:19:26.750Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:19:26.750Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:19:26.750Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:19:26.750Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:19:26.750Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, memeriksa modul baru...
+[2025-02-07T10:19:26.751Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:19:26.751Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:19:26.751Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:19:26.751Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:19:26.751Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:19:26.751Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:19:26.752Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:19:26.752Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:19:26.752Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:19:26.752Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:19:26.752Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:19:26.753Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:19:26.753Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:19:26.753Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:19:26.753Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:19:26.753Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:19:26.754Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:19:26.754Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:19:26.754Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:19:26.754Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:19:26.755Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:19:26.755Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:19:26.756Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:19:30.311Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:19:30.311Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, memeriksa modul baru...
+[2025-02-07T10:19:30.312Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:19:30.312Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:19:30.312Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:19:30.313Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:19:30.313Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:19:30.313Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:19:30.313Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:19:30.313Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:19:30.314Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:19:30.314Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:19:30.314Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:19:30.314Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:19:30.315Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:19:30.315Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:19:30.315Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:19:30.315Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:19:30.316Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:19:30.316Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:19:30.316Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:19:30.316Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:19:30.316Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:19:30.317Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:19:30.317Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:19:30.317Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:19:30.317Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:19:30.317Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:19:30.318Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:19:30.318Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:19:30.318Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:19:30.318Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:19:30.318Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:19:30.318Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:19:30.319Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:19:30.319Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, memeriksa modul baru...
+[2025-02-07T10:19:30.319Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:19:30.319Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:19:30.319Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:19:30.320Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:19:30.320Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:19:30.320Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:19:30.320Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:19:30.320Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:19:30.320Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:19:30.321Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:19:30.321Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:19:30.321Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:19:30.322Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:19:30.322Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:19:30.322Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:19:30.322Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:19:30.322Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:19:30.323Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:19:30.323Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:19:30.323Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:19:30.323Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:19:30.323Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:19:30.324Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:19:30.324Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:19:30.324Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:19:30.324Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, memeriksa modul baru...
+[2025-02-07T10:19:30.324Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:19:30.324Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:19:30.325Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:19:30.325Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:19:30.325Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:19:30.325Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:19:30.325Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:19:30.326Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:19:30.326Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:19:30.326Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:19:30.326Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:19:30.327Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:19:30.327Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:19:30.327Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:19:30.327Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:19:30.329Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:19:35.816Z] 🔄 Perubahan terdeteksi di hdr.js, memeriksa modul baru...
+[2025-02-07T10:19:35.816Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T10:19:35.817Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T10:19:35.817Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:19:35.818Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:19:35.818Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:19:35.819Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:19:35.819Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:19:35.819Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:19:35.819Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:19:35.820Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:19:35.820Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:19:35.820Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:19:35.821Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:19:35.821Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:19:35.821Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:19:35.822Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:19:35.822Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:19:35.822Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:19:35.822Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:19:35.822Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:19:35.823Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:19:35.823Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:19:35.823Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:19:35.823Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:19:35.824Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:19:35.824Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:19:35.824Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:19:35.824Z] 🔄 Perubahan terdeteksi di hdr.js, memeriksa modul baru...
+[2025-02-07T10:19:35.824Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T10:19:35.824Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:19:35.825Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T10:19:35.825Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:19:35.825Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:19:35.825Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:19:35.825Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:19:35.826Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:19:35.826Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:19:35.826Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:19:35.826Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:19:35.826Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:19:35.827Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:19:35.827Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:19:35.827Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:19:35.827Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:19:35.828Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:19:35.828Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:19:35.828Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:19:35.828Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:19:35.829Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:19:35.829Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:19:35.829Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:19:35.829Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:19:35.829Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:19:35.830Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:19:35.830Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:19:35.830Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:19:35.830Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, memeriksa modul baru...
+[2025-02-07T10:19:35.831Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:19:35.831Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:19:35.831Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:19:35.831Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:19:35.832Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:19:35.832Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:19:35.832Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:19:35.833Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:19:35.833Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:19:35.833Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:19:35.833Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:19:35.834Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:19:35.834Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:19:35.834Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:19:35.834Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:19:35.834Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:19:35.835Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:19:35.835Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:19:35.835Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:19:35.836Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:19:35.836Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:19:35.836Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:19:35.836Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:19:35.837Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:19:35.837Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:19:35.837Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:26:37.495Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:26:37.518Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:26:37.520Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-07T10:27:20.601Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T10:27:20.602Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:27:20.602Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:27:20.602Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:27:20.602Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:27:20.602Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:27:20.603Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:27:20.603Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:27:20.603Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:27:20.604Z] ❌ Gagal memuat hdr1.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr1.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:27:20.604Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:27:20.604Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:27:20.604Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:27:20.605Z] ❌ Gagal memuat hdr1.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr1.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:27:20.605Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:27:20.605Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:27:20.606Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:27:20.606Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:27:20.606Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:27:20.606Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:27:20.606Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:27:20.607Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:27:20.607Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:27:20.607Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:27:20.607Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:27:20.607Z] 🔄 Perubahan terdeteksi di hdr1.js, mereload endpoint...
+[2025-02-07T10:27:20.608Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:27:20.608Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:27:20.608Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:27:20.608Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:27:20.608Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:27:20.609Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:27:20.609Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:27:20.609Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:27:20.609Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:27:20.610Z] ❌ Gagal memuat hdr1.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr1.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:27:20.610Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:27:20.610Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:27:20.610Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:27:20.610Z] ❌ Gagal memuat hdr1.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr1.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:27:20.610Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:27:20.611Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:27:20.611Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:27:20.611Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:27:20.611Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:27:20.612Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:27:20.612Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:27:20.612Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:27:20.612Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:27:20.612Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:27:20.612Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:27:20.614Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:34:11.142Z] ❌ Gagal memuat hdr1.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr1.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:34:11.165Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:34:11.167Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-07T10:37:37.216Z] ❌ Gagal memuat hdr1.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr1.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:37:37.236Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:37:37.239Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-07T10:41:17.503Z] ❌ Gagal memuat hdr1.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr1.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:41:17.528Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:41:17.530Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-07T10:42:06.452Z] ❌ Gagal memuat hdr1.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr1.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:42:06.473Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:42:06.475Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-07T10:42:21.659Z] 🔄 Perubahan terdeteksi di hdr1.js, mereload endpoint...
+[2025-02-07T10:42:21.660Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:42:21.660Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:42:21.660Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:42:21.660Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:42:21.661Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:42:21.661Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:42:21.661Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:42:21.662Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:42:21.662Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:42:21.662Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:42:21.662Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:42:21.662Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:42:21.663Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:42:21.663Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:42:21.663Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:42:21.663Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:42:21.664Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:42:21.664Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:42:21.664Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:42:21.664Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:42:21.664Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:42:21.665Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:42:21.668Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:42:38.236Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:42:38.237Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:42:38.237Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:42:38.237Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:42:38.237Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:42:38.237Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:42:38.238Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:42:38.238Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:42:38.238Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:42:38.238Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:42:38.239Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:42:38.239Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:42:38.239Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:42:38.239Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:42:38.240Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:42:38.240Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:42:38.241Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:42:38.241Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:42:38.241Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:42:38.241Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:42:38.241Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:42:38.242Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:42:38.242Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:42:38.242Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:42:38.242Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:42:38.242Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:42:38.242Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:42:38.243Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:42:38.243Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:42:38.243Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:42:38.243Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:42:38.244Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:42:38.244Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:42:38.244Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:42:38.244Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:42:38.245Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:42:38.245Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:42:38.245Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:42:38.245Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:42:38.245Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:42:38.246Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:42:38.246Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:42:38.246Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:42:38.246Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:42:38.247Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:42:38.247Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:42:38.247Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:42:38.256Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:42:53.786Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:42:53.787Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:42:53.787Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:42:53.788Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:42:53.788Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:42:53.788Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:42:53.789Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:42:53.789Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:42:53.789Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:42:53.789Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:42:53.789Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:42:53.790Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:42:53.790Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:42:53.790Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:42:53.790Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:42:53.790Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:42:53.791Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:42:53.791Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:42:53.791Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:42:53.791Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:42:53.792Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:42:53.792Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:42:53.792Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:42:53.792Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:42:53.792Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:42:53.792Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:42:53.793Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:42:53.793Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:42:53.793Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:42:53.793Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:42:53.793Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:42:53.794Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:42:53.794Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:42:53.794Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:42:53.794Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:42:53.795Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:42:53.795Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:42:53.795Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:42:53.796Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:42:53.796Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:42:53.796Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:42:53.796Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:42:53.797Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:42:53.797Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:42:53.798Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:42:53.798Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:42:53.798Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:42:53.798Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:42:53.798Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:42:53.798Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:42:53.799Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:42:53.799Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:42:53.799Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:42:53.799Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:42:53.799Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:42:53.800Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:42:53.800Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:42:53.800Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:42:53.800Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:42:53.801Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:42:53.801Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:42:53.801Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:42:53.801Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:42:53.801Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:42:53.802Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:42:53.802Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:42:53.802Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:42:53.802Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:42:53.802Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:42:53.802Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:42:53.803Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:42:53.803Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:43:07.794Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T10:43:07.795Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:43:07.795Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:43:07.796Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:43:07.796Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:43:07.796Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:43:07.796Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:43:07.797Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:43:07.797Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:43:07.797Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:43:07.798Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:43:07.798Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:43:07.798Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:43:07.799Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:43:07.799Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:43:07.799Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:43:07.800Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:43:07.800Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:43:07.800Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:43:07.801Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:43:07.801Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:43:07.801Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:43:07.801Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:43:07.802Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:43:07.802Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:43:07.802Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T10:43:07.802Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:43:07.802Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:43:07.803Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:43:07.803Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:43:07.803Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:43:07.803Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:43:07.804Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:43:07.804Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:43:07.804Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:43:07.805Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:43:07.805Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:43:07.805Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:43:07.805Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:43:07.805Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:43:07.805Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:43:07.806Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:43:07.806Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:43:07.806Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:43:07.806Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:43:07.807Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:43:07.807Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:43:07.807Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:43:07.807Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:43:07.808Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:43:07.808Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:43:07.808Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:43:07.808Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:43:07.808Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:43:07.809Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:43:07.809Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:43:07.809Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:43:07.810Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:43:07.810Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:43:07.810Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:43:07.810Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:43:07.811Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:43:07.811Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:43:07.811Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:43:07.812Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:43:07.812Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:43:07.812Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:43:07.812Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:43:07.812Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:43:07.812Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:43:07.813Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:43:07.813Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:43:07.813Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:43:07.813Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:43:07.814Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:43:07.814Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:43:07.814Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:43:07.816Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:49:56.782Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T10:49:56.783Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:49:56.783Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:49:56.783Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:49:56.783Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:49:56.784Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:49:56.784Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:49:56.784Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:49:56.784Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:49:56.784Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:49:56.785Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:49:56.785Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:49:56.785Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:49:56.785Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:49:56.785Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:49:56.786Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:49:56.786Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:49:56.787Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:49:56.787Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:49:56.787Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:49:56.787Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:49:56.788Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:49:56.788Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:50:09.855Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:50:09.856Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:50:09.856Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:50:09.857Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:50:09.857Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:50:09.857Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:50:09.857Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:50:09.857Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:50:09.858Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:50:09.858Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:50:09.858Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:50:09.858Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:50:09.858Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:50:09.859Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:50:09.859Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:50:09.859Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:50:09.859Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:50:09.859Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:50:09.860Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:50:09.860Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:50:09.860Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:50:09.860Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:50:09.860Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:50:09.860Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:50:09.861Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:50:09.861Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:50:09.861Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:50:09.861Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:50:09.861Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:50:09.862Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:50:09.862Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:50:09.862Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:50:09.862Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:50:09.862Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:50:09.863Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:50:09.863Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:50:09.864Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:50:09.864Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:50:09.864Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:50:09.864Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:50:09.865Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:50:09.865Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:50:09.865Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:50:09.865Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:50:09.865Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:50:09.866Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:50:18.939Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:50:18.940Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:50:18.940Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:50:18.940Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:50:18.940Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:50:18.941Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:50:18.941Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:50:18.941Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:50:18.941Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:50:18.941Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:50:18.942Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:50:18.942Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:50:18.942Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:50:18.942Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:50:18.942Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:50:18.943Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:50:18.943Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:50:18.943Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:50:18.943Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:50:18.944Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:50:18.944Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:50:18.944Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:50:18.944Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:50:18.944Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:50:18.944Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:50:18.945Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:50:18.945Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:50:18.945Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:50:18.946Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:50:18.946Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:50:18.946Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:50:18.946Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:50:18.946Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:50:18.947Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:50:18.947Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:50:18.947Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:50:18.947Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:50:18.947Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:50:18.948Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:50:18.948Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:50:18.948Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:50:18.948Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:50:18.948Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:50:18.950Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:50:18.950Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:50:18.950Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:50:18.950Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:50:18.950Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:50:18.950Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:50:18.951Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:50:18.951Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:50:18.951Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:50:18.951Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:50:18.951Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:50:18.952Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:50:18.952Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:50:18.952Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:50:18.952Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:50:18.953Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:50:18.953Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:50:18.953Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:50:18.953Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:50:18.954Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:50:18.954Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:50:18.954Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:50:18.954Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:50:18.955Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:50:18.956Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:50:18.956Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:50:28.657Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T10:50:28.658Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:50:28.658Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:50:28.658Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:50:28.658Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:50:28.659Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:50:28.659Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:50:28.659Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:50:28.659Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:50:28.660Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:50:28.660Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:50:28.661Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:50:28.661Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:50:28.661Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:50:28.661Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:50:28.662Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:50:28.662Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:50:28.662Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:50:28.662Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:50:28.663Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:50:28.663Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:50:28.663Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:50:28.663Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:50:28.664Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:50:28.664Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T10:50:28.664Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:50:28.664Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:50:28.665Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:50:28.665Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:50:28.665Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:50:28.665Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:50:28.666Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:50:28.666Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:50:28.666Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:50:28.666Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:50:28.667Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:50:28.667Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:50:28.667Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:50:28.668Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:50:28.669Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:50:28.669Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:50:28.669Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:50:28.669Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:50:28.670Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:50:28.670Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:50:28.670Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:50:28.670Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:50:28.670Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T10:50:28.670Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T10:50:28.671Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T10:50:28.671Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T10:50:28.671Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T10:50:28.672Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T10:50:28.672Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T10:50:28.672Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T10:50:28.672Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T10:50:28.673Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T10:50:28.673Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T10:50:28.673Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T10:50:28.674Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T10:50:28.674Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T10:50:28.674Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T10:50:28.674Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T10:50:28.675Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T10:50:28.675Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T10:50:28.675Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T10:50:28.675Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T10:50:28.676Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T10:50:28.676Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T10:50:28.676Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T10:50:28.676Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T10:50:28.676Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T11:26:38.755Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T11:26:38.778Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T11:30:32.479Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T11:30:32.500Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T11:35:38.069Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T11:35:38.089Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T11:38:16.992Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T11:38:17.011Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T11:40:38.905Z] ❌ Gagal memuat hdr.js: Error: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1249:15)
+    at Function._load (node:internal/modules/cjs/loader:1075:27)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at Object.<anonymous> (/workspace/api-h1/routes/hdr.js:4:15)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+    at Function._load (node:internal/modules/cjs/loader:1128:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:218:24)
+    at Module.require (node:internal/modules/cjs/loader:1340:12)
+    at require (node:internal/modules/helpers:141:16)
+    at /workspace/api-h1/app.js:84:31
+    at Array.forEach (<anonymous>)
+    at registerRoutes (/workspace/api-h1/app.js:77:32)
+    at Object.<anonymous> (/workspace/api-h1/app.js:111:1)
+    at Module._compile (node:internal/modules/cjs/loader:1546:14)
+    at Object..js (node:internal/modules/cjs/loader:1689:10)
+    at Module.load (node:internal/modules/cjs/loader:1318:32)
+[2025-02-07T11:40:38.927Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T11:47:51.451Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T11:47:51.466Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T11:47:51.466Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T11:47:51.466Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T11:47:51.467Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T11:47:51.469Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T11:47:51.470Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T11:47:51.471Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T11:47:51.472Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T11:47:51.472Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T11:47:51.473Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T11:47:51.491Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T11:47:51.491Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T11:47:51.492Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T11:47:51.492Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T11:47:51.493Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T11:47:51.493Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T11:47:51.494Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T11:47:51.495Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T11:47:51.495Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T11:47:51.496Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T11:47:51.496Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T11:47:51.496Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T11:47:51.499Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-07T11:50:02.565Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T11:50:02.578Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T11:50:02.578Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T11:50:02.579Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T11:50:02.579Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T11:50:02.582Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T11:50:02.583Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T11:50:02.584Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T11:50:02.584Z] ❌ Gagal memuat hdr.js: Cannot find module 'sharp'
+Require stack:
+- /workspace/api-h1/routes/hdr.js
+- /workspace/api-h1/app.js
+[2025-02-07T11:50:02.585Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T11:50:02.586Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T11:50:02.600Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T11:50:02.600Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T11:50:02.601Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T11:50:02.601Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T11:50:02.602Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T11:50:02.602Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T11:50:02.603Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T11:50:02.603Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T11:50:02.604Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T11:50:02.604Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T11:50:02.604Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T11:50:02.604Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T11:50:02.606Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-07T11:58:40.319Z] 📡 GET /
+[2025-02-07T11:58:40.700Z] 📡 GET /css/index.css
+[2025-02-07T11:58:41.149Z] 📡 GET /api/docs
+[2025-02-07T11:58:41.280Z] 📡 GET /favicon.ico
+[2025-02-07T11:58:44.056Z] 📡 GET /docs
+[2025-02-07T11:58:51.063Z] 📡 GET /api/docs
+[2025-02-07T11:59:11.171Z] 📡 GET /api/hdr
+[2025-02-07T11:59:12.753Z] 📡 GET /api/hdr
+[2025-02-07T11:59:25.284Z] 📡 GET /api/qrcode
+[2025-02-07T12:09:41.586Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T12:09:41.586Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:09:41.586Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:09:41.587Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:09:41.587Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:09:41.587Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:09:41.587Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:09:41.588Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:09:41.588Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:09:41.588Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:09:41.588Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:09:41.588Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:09:41.588Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:09:41.589Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:09:41.589Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:09:41.589Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:09:41.589Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:09:41.589Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:09:41.590Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:09:41.590Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:09:41.590Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:09:41.590Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:09:41.590Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:09:45.601Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T12:09:45.602Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:09:45.603Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:09:45.603Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:09:45.603Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:09:45.603Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:09:45.603Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:09:45.604Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:09:45.604Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:09:45.604Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:09:45.604Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:09:45.604Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:09:45.605Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:09:45.605Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:09:45.605Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:09:45.605Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:09:45.605Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:09:45.605Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:09:45.606Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:09:45.606Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:09:45.606Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:09:45.606Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:09:45.606Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:09:45.606Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T12:09:45.606Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:09:45.607Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:09:45.607Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:09:45.607Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:09:45.607Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:09:45.607Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:09:45.607Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:09:45.608Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:09:45.608Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:09:45.608Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:09:45.608Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:09:45.608Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:09:45.608Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:09:45.609Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:09:45.609Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:09:45.609Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:09:45.610Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:09:45.610Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:09:45.610Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:09:45.610Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:09:45.611Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:09:45.611Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:09:47.175Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T12:09:47.175Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:09:47.176Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:09:47.176Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:09:47.176Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:09:47.176Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:09:47.177Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:09:47.177Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:09:47.177Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:09:47.177Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:09:47.177Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:09:47.177Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:09:47.178Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:09:47.178Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:09:47.178Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:09:47.178Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:09:47.178Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:09:47.179Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:09:47.179Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:09:47.179Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:09:47.179Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:09:47.179Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:09:47.179Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:09:47.179Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T12:09:47.180Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:09:47.180Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:09:47.180Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:09:47.180Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:09:47.180Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:09:47.181Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:09:47.181Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:09:47.181Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:09:47.181Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:09:47.181Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:09:47.181Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:09:47.182Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:09:47.182Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:09:47.183Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:09:47.183Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:09:47.183Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:09:47.183Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:09:47.183Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:09:47.184Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:09:47.184Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:09:47.184Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:09:47.184Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:09:47.184Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T12:09:47.184Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:09:47.184Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:09:47.185Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:09:47.185Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:09:47.185Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:09:47.185Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:09:47.185Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:09:47.185Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:09:47.186Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:09:47.186Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:09:47.186Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:09:47.186Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:09:47.186Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:09:47.186Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:09:47.186Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:09:47.187Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:09:47.187Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:09:47.187Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:09:47.187Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:09:47.187Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:09:47.188Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:09:47.188Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:10:04.832Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T12:10:04.833Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:10:04.833Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:10:04.833Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:10:04.833Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:10:04.834Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:10:04.834Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:10:04.834Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:10:04.834Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:10:04.835Z] [34m[GET][39m /api/hdr ✅
+[2025-02-07T12:10:04.835Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:10:04.835Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:10:04.836Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:10:04.836Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:10:04.836Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:10:04.836Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:10:04.837Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:10:04.837Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:10:04.837Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:10:04.837Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:10:04.837Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:10:04.837Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:10:04.838Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:10:04.838Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:10:04.838Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T12:10:04.838Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:10:04.838Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:10:04.839Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:10:04.839Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:10:04.839Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:10:04.839Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:10:04.839Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:10:04.840Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:10:04.840Z] [34m[GET][39m /api/hdr ✅
+[2025-02-07T12:10:04.840Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:10:04.840Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:10:04.841Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:10:04.841Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:10:04.841Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:10:04.842Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:10:04.842Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:10:04.842Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:10:04.842Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:10:04.842Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:10:04.843Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:10:04.843Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:10:04.843Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:10:04.843Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:10:04.843Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T12:10:04.843Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:10:04.844Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:10:04.844Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:10:04.844Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:10:04.844Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:10:04.844Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:10:04.844Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:10:04.845Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:10:04.845Z] [34m[GET][39m /api/hdr ✅
+[2025-02-07T12:10:04.845Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:10:04.845Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:10:04.845Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:10:04.846Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:10:04.846Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:10:04.846Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:10:04.846Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:10:04.846Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:10:04.847Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:10:04.847Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:10:04.847Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:10:04.847Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:10:04.847Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:10:04.848Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:10:15.332Z] 📡 GET /api/hdr
+[2025-02-07T12:10:17.056Z] 📡 GET /api/hdr
+[2025-02-07T12:10:26.057Z] 📡 GET /api/docs
+[2025-02-07T12:10:34.574Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T12:10:34.575Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:10:34.575Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:10:34.575Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:10:34.575Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:10:34.576Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:10:34.576Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:10:34.576Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:10:34.576Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:10:34.577Z] [34m[GET][39m /api/hdr ✅
+[2025-02-07T12:10:34.577Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:10:34.577Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:10:34.577Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:10:34.577Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:10:34.577Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:10:34.578Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:10:34.578Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:10:34.578Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:10:34.578Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:10:34.578Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:10:34.579Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:10:34.579Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:10:34.579Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:10:34.579Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:10:34.579Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T12:10:34.580Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:10:34.580Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:10:34.580Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:10:34.580Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:10:34.581Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:10:34.581Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:10:34.581Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:10:34.581Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:10:34.582Z] [34m[GET][39m /api/hdr ✅
+[2025-02-07T12:10:34.582Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:10:34.582Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:10:34.582Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:10:34.582Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:10:34.583Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:10:34.583Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:10:34.583Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:10:34.583Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:10:34.583Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:10:34.584Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:10:34.584Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:10:34.584Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:10:34.584Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:10:34.584Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:10:41.773Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T12:10:41.774Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:10:41.774Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:10:41.774Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:10:41.774Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:10:41.775Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:10:41.775Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:10:41.775Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:10:41.775Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:10:41.776Z] [34m[GET][39m /api/hdr ✅
+[2025-02-07T12:10:41.776Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:10:41.776Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:10:41.776Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:10:41.777Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:10:41.777Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:10:41.777Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:10:41.777Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:10:41.777Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:10:41.778Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:10:41.778Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:10:41.779Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:10:41.779Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:10:41.779Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:10:41.779Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:10:41.779Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T12:10:41.779Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:10:41.780Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:10:41.780Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:10:41.780Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:10:41.780Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:10:41.780Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:10:41.781Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:10:41.781Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:10:41.781Z] [34m[GET][39m /api/hdr ✅
+[2025-02-07T12:10:41.781Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:10:41.782Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:10:41.782Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:10:41.782Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:10:41.782Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:10:41.782Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:10:41.783Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:10:41.783Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:10:41.783Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:10:41.783Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:10:41.783Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:10:41.784Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:10:41.784Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:10:41.784Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:10:41.784Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T12:10:41.784Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:10:41.784Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:10:41.785Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:10:41.785Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:10:41.785Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:10:41.785Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:10:41.785Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:10:41.786Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:10:41.786Z] [34m[GET][39m /api/hdr ✅
+[2025-02-07T12:10:41.786Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:10:41.787Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:10:41.787Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:10:41.787Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:10:41.788Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:10:41.788Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:10:41.788Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:10:41.788Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:10:41.789Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:10:41.789Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:10:41.789Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:10:41.789Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:10:41.789Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:10:41.789Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:11:11.326Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T12:11:11.327Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:11:11.327Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:11:11.327Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:11:11.328Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:11:11.328Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:11:11.328Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:11:11.328Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:11:11.328Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:11:11.329Z] [34m[GET][39m /api/hdr ✅
+[2025-02-07T12:11:11.329Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:11:11.329Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:11:11.329Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:11:11.330Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:11:11.330Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:11:11.330Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:11:11.330Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:11:11.330Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:11:11.331Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:11:11.331Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:11:11.331Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:11:11.331Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:11:11.331Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:11:11.332Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:11:11.332Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T12:11:11.332Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:11:11.333Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:11:11.333Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:11:11.333Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:11:11.334Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:11:11.334Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:11:11.334Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:11:11.334Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:11:11.335Z] [34m[GET][39m /api/hdr ✅
+[2025-02-07T12:11:11.335Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:11:11.335Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:11:11.335Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:11:11.335Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:11:11.336Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:11:11.336Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:11:11.336Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:11:11.336Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:11:11.336Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:11:11.337Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:11:11.337Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:11:11.337Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:11:11.337Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:11:11.337Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:11:11.337Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T12:11:11.338Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:11:11.338Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:11:11.338Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:11:11.338Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:11:11.338Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:11:11.339Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:11:11.339Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:11:11.339Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:11:11.339Z] [34m[GET][39m /api/hdr ✅
+[2025-02-07T12:11:11.339Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:11:11.340Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:11:11.340Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:11:11.340Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:11:11.340Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:11:11.340Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:11:11.341Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:11:11.341Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:11:11.341Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:11:11.342Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:11:11.342Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:11:11.342Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:11:11.342Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:11:11.342Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:11:17.069Z] 📡 GET /api/docs
+[2025-02-07T12:11:22.206Z] 📡 GET /api/hdr
+[2025-02-07T12:11:43.674Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T12:11:43.675Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:11:43.675Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:11:43.675Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:11:43.675Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:11:43.675Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:11:43.676Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:11:43.676Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:11:43.676Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:11:43.676Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:11:43.676Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:11:43.677Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:11:43.677Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:11:43.677Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:11:43.677Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:11:43.677Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:11:43.678Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:11:43.678Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:11:43.678Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:11:43.678Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:11:43.678Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:11:43.679Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:11:43.679Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:11:45.757Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T12:11:45.758Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:11:45.758Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:11:45.758Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:11:45.758Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:11:45.759Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:11:45.759Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:11:45.759Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:11:45.759Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:11:45.760Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:11:45.760Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:11:45.760Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:11:45.760Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:11:45.761Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:11:45.761Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:11:45.761Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:11:45.761Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:11:45.762Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:11:45.762Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:11:45.762Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:11:45.763Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:11:45.763Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:11:45.763Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:11:45.763Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T12:11:45.763Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:11:45.764Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:11:45.764Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:11:45.764Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:11:45.764Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:11:45.764Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:11:45.765Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:11:45.765Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:11:45.765Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:11:45.765Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:11:45.766Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:11:45.766Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:11:45.766Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:11:45.766Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:11:45.767Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:11:45.767Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:11:45.767Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:11:45.767Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:11:45.767Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:11:45.768Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:11:45.768Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:11:45.768Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:11:48.845Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T12:11:48.846Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:11:48.847Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:11:48.847Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:11:48.847Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:11:48.847Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:11:48.848Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:11:48.848Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:11:48.848Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:11:48.848Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:11:48.849Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:11:48.850Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:11:48.850Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:11:48.850Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:11:48.850Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:11:48.851Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:11:48.851Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:11:48.851Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:11:48.851Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:11:48.852Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:11:48.852Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:11:48.852Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:11:48.852Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:11:48.852Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T12:11:48.853Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:11:48.853Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:11:48.853Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:11:48.853Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:11:48.854Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:11:48.854Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:11:48.854Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:11:48.854Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:11:48.854Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:11:48.855Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:11:48.855Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:11:48.855Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:11:48.855Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:11:48.856Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:11:48.856Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:11:48.856Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:11:48.856Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:11:48.856Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:11:48.857Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:11:48.857Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:11:48.857Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:11:48.857Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:11:48.857Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T12:11:48.858Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:11:48.858Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:11:48.858Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:11:48.858Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:11:48.858Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:11:48.859Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:11:48.859Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:11:48.860Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:11:48.860Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:11:48.860Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:11:48.860Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:11:48.861Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:11:48.861Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:11:48.861Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:11:48.861Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:11:48.861Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:11:48.862Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:11:48.862Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:11:48.862Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:11:48.862Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:11:48.863Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:11:48.863Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:12:23.332Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T12:12:23.332Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:12:23.333Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:12:23.333Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:12:23.333Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:12:23.333Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:12:23.333Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:12:23.334Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:12:23.334Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:12:23.334Z] [34m[GET][39m /api/hdr ✅
+[2025-02-07T12:12:23.335Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:12:23.335Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:12:23.335Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:12:23.335Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:12:23.336Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:12:23.336Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:12:23.336Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:12:23.336Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:12:23.337Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:12:23.337Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:12:23.337Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:12:23.337Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:12:23.338Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:12:23.338Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:12:23.338Z] 🔄 Perubahan terdeteksi di hdr.js, mereload endpoint...
+[2025-02-07T12:12:23.339Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:12:23.339Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:12:23.339Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:12:23.339Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:12:23.340Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:12:23.340Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:12:23.340Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:12:23.340Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:12:23.341Z] [34m[GET][39m /api/hdr ✅
+[2025-02-07T12:12:23.341Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:12:23.341Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:12:23.341Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:12:23.341Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:12:23.342Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:12:23.342Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:12:23.342Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:12:23.342Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:12:23.343Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:12:23.343Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:12:23.343Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:12:23.343Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:12:23.343Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:12:23.343Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:12:23.344Z] 🔄 Perubahan terdeteksi di .hdr.js.swp, mereload endpoint...
+[2025-02-07T12:12:23.344Z] [34m[GET][39m /api/apkpure ✅
+[2025-02-07T12:12:23.344Z] [34m[GET][39m /api/apksum ✅
+[2025-02-07T12:12:23.344Z] [34m[GET][39m /api/brainai ✅
+[2025-02-07T12:12:23.344Z] [34m[GET][39m /api/brat ✅
+[2025-02-07T12:12:23.345Z] [34m[GET][39m /api/bukkit ✅
+[2025-02-07T12:12:23.345Z] [34m[GET][39m /api/capcut ✅
+[2025-02-07T12:12:23.345Z] [34m[GET][39m /api/cekkhodam ✅
+[2025-02-07T12:12:23.345Z] [34m[GET][39m /api/ephoto360 ✅
+[2025-02-07T12:12:23.346Z] [34m[GET][39m /api/hdr ✅
+[2025-02-07T12:12:23.346Z] [34m[GET][39m /api/motivasi ✅
+[2025-02-07T12:12:23.346Z] [34m[GET][39m /api/playstore ✅
+[2025-02-07T12:12:23.346Z] [34m[GET][39m /api/qrcode ✅
+[2025-02-07T12:12:23.347Z] [34m[GET][39m /api/rebahinxxi ✅
+[2025-02-07T12:12:23.347Z] [34m[GET][39m /api/tebaknegara ✅
+[2025-02-07T12:12:23.348Z] [34m[GET][39m /api/tiktok ✅
+[2025-02-07T12:12:23.348Z] [34m[GET][39m /api/tournamentml ✅
+[2025-02-07T12:12:23.348Z] [34m[GET][39m /api/ttstalk ✅
+[2025-02-07T12:12:23.348Z] [34m[GET][39m /api/videoupscale ✅
+[2025-02-07T12:12:23.349Z] [34m[GET][39m /api/voicemlbb ✅
+[2025-02-07T12:12:23.349Z] [34m[GET][39m /api/wpuhd ✅
+[2025-02-07T12:12:23.349Z] [34m[GET][39m /api/ytsearch ✅
+[2025-02-07T12:12:23.349Z] [34m[GET][39m /api/zodiak ✅
+[2025-02-07T12:12:23.349Z] ✅ Semua endpoint diperbarui!
+[2025-02-07T12:12:31.505Z] 📡 GET /api/hdr
+[2025-02-07T12:15:07.129Z] 📡 GET /public/status.html
+[2025-02-07T12:15:15.050Z] 📡 GET /status.html
+[2025-02-07T12:15:16.143Z] 📡 GET /socket.io/?EIO=4&transport=polling&t=PJWLV5c
+[2025-02-07T12:15:17.335Z] 📡 GET /socket.io/?EIO=4&transport=polling&t=PJWLVP4
+[2025-02-07T12:16:00.816Z] 📡 GET /hdr.html
+[2025-02-07T12:16:24.506Z] 📡 POST /api/hdr
+[2025-02-07T12:16:51.048Z] 📡 GET /hdr.html
+[2025-02-07T12:17:22.675Z] 📡 GET /api/hdr
+[2025-02-07T12:17:50.900Z] 📡 GET /api/hdr
+[2025-02-07T12:17:51.070Z] 📡 GET /hdr.html
+[2025-02-07T12:17:51.262Z] 📡 GET /
+[2025-02-07T12:17:52.142Z] 📡 GET /hdr.html
+[2025-02-07T12:17:55.392Z] 📡 GET /hdr.html
+[2025-02-07T12:18:11.358Z] 📡 POST /api/hdr
+[2025-02-07T12:19:18.466Z] 📡 GET /api/hdr
+[2025-02-07T12:20:04.317Z] 📡 GET /api/hdr?image=https://8080-henxyzz-apih1-luus0t3mj88.ws-us117.gitpod.io/IMG_2025-02-06-19-18-41-061.jpg
+[2025-02-07T12:20:25.365Z] 📡 GET /api/hdr?image=https://8080-henxyzz-apih1-luus0t3mj88.ws-us117.gitpod.io/IMG_2025-02-06-19-18-41-061.jpg&brightness=1.2&saturation=1.3&sharpness=1.5&mode=bright&format=jpeg
+[2025-02-07T12:20:55.627Z] 📡 GET /api/hdr?image=https://8080-henxyzz-apih1-luus0t3mj88.ws-us117.gitpod.io/IMG_2025-02-06-19-18-41-061.jpg&brightness=1.2&saturation=1.3&sharpness=1.5&mode=bright&format=jpeg
+[2025-02-07T12:20:58.373Z] 📡 GET /api/hdr?image=https://8080-henxyzz-apih1-luus0t3mj88.ws-us117.gitpod.io/IMG_2025-02-06-19-18-41-061.jpg&brightness=1.2&saturation=1.3&sharpness=1.5&mode=bright&format=jpeg
+[2025-02-07T14:13:03.054Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-08T00:44:35.208Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-08T00:46:31.414Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-08T01:15:08.970Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-08T01:18:18.028Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-08T04:56:01.203Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-08T04:57:29.763Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-08T05:01:04.984Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-08T05:04:17.660Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-08T07:21:33.922Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-08T07:22:36.764Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-08T07:25:46.285Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-08T08:04:07.662Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-08T08:10:55.586Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-08T12:36:52.232Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-09T06:27:24.271Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-09T06:28:14.200Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-09T07:08:23.947Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-09T07:08:55.976Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-09T07:09:56.595Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-09T07:12:32.874Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-09T07:14:38.051Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-09T07:15:22.330Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-09T07:19:59.098Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-09T07:22:20.638Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-09T07:23:49.846Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-09T07:25:58.279Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-09T07:29:19.082Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-09T09:52:17.336Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-09T09:53:42.130Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-09T09:56:19.439Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-09T09:58:06.934Z] 🚀 Server berjalan di http://localhost:8000
+[2025-02-09T10:08:54.146Z] 🚀 Server berjalan di http://localhost:8000
