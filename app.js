@@ -1,57 +1,41 @@
-const express = require('express');
-const fs = require('fs');
-const path = require('path');
-const { execSync } = require('child_process');
-const chalk = require('chalk');
-const dotenv = require('dotenv');
-const app = express();
+const express = require("express");
+const fs = require("fs");
+const path = require("path");
+const { execSync } = require("child_process");
+const chalk = require("chalk");
+const dotenv = require("dotenv");
+const chokidar = require("chokidar");
 
+const app = express();
 dotenv.config();
 
-const logFilePath = path.join(__dirname, 'server.log');
+const logFilePath = path.join(__dirname, "server.log");
 
-// Fungsi untuk memeriksa apakah modul sudah terinstal
-function isModuleInstalled(moduleName) {
+// 🔹 Cek & Install Module npm yang Hilang
+function ensureModuleInstalled(moduleName) {
   try {
     require.resolve(moduleName);
     return true;
-  } catch (e) {
-    return false;
-  }
-}
-
-// Fungsi untuk menginstall modul yang hilang
-function installModule(moduleName) {
-  console.log(`🚨 Modul ${moduleName} tidak ditemukan. Menginstall...`);
-  try {
-    execSync(`npm install ${moduleName}`, { stdio: 'inherit' });
   } catch (err) {
-    console.error(`Gagal menginstall modul ${moduleName}:`, err);
+    console.log(chalk.yellow(`📦 Module '${moduleName}' belum terinstall. Menginstall...`));
+    try {
+      execSync(`npm install ${moduleName}`, { stdio: "inherit" });
+      console.log(chalk.green(`✅ Module '${moduleName}' berhasil diinstall!`));
+      return true;
+    } catch (installErr) {
+      console.log(chalk.red(`❌ Gagal install module '${moduleName}'!`));
+      return false;
+    }
   }
 }
 
-// Menangani error uncaughtException
-process.on('uncaughtException', (err) => {
-  if (err.code === 'MODULE_NOT_FOUND') {
-    const missingModule = err.message.match(/'([^']+)'/)[1];
-    if (!isModuleInstalled(missingModule)) {
-      installModule(missingModule);
-      require(err.requireStack[0]);
-    } else {
-      console.error('🚨 Error lain:', err);
-    }
-  } else {
-    console.error('🚨 Error tak terduga:', err);
-  }
-});
-
-// === Fungsi Logging ===
-function logMessage(message, type = 'info') {
+// 🔹 Logging ke file & console
+function logMessage(message, type = "info") {
   const timestamp = new Date().toISOString();
   const logEntry = `[${timestamp}] ${message}\n`;
-  
-  fs.appendFileSync(logFilePath, logEntry, 'utf8');
-  
+
+  fs.appendFileSync(logFilePath, logEntry, "utf8");
+
   const colors = {
     info: chalk.blue,
     success: chalk.green,
@@ -62,84 +46,144 @@ function logMessage(message, type = 'info') {
   console.log(colors[type](logEntry.trim()));
 }
 
-// === Rate Limit ===
-const rateLimit = require('express-rate-limit');
-const limiter = rateLimit({
-  windowMs: 60 * 1000, 
-  max: 1000, 
-  message: 'Terlalu banyak request. Coba lagi nanti.',
-});
-
-// === Middleware ===
-app.set('json spaces', 2);
-app.use('/api/', limiter);
+// 🔹 Middleware Global
+app.set("json spaces", 2);
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static(path.join(__dirname, "public")));
+app.use("/outputs", express.static(path.join(__dirname, "outputs")));
 
-// === Serve Static Files ===
-app.use(express.static(path.join(__dirname, 'public')));
 
-// === Memuat Routes Otomatis ===
-fs.readdirSync(path.join(__dirname, 'routes')).forEach(file => {
-  const route = require(path.join(__dirname, 'routes', file));
-  app.use(`/api/${path.basename(file, '.js')}`, route);
+// 🔹 Rate Limiter
+const rateLimit = require("express-rate-limit");
+const limiter = rateLimit({
+  windowMs: 60 * 1000,
+  max: 1000,
+  message: "Terlalu banyak request. Coba lagi nanti.",
 });
+app.use("/api/", limiter);
 
-// === API Docs ===
-app.get('/api/docs', (req, res) => {
-  const routesPath = path.join(__dirname, 'routes');
+// 🔹 Load Routes Otomatis
+function loadRoutes() {
+  const routesPath = path.join(__dirname, "routes");
   let apiDocs = {};
 
+  if (!fs.existsSync(routesPath)) {
+    fs.mkdirSync(routesPath);
+  }
+
   fs.readdirSync(routesPath).forEach((file) => {
-    if (file.endsWith('.js')) {
-      const route = require(path.join(routesPath, file));
+    const routeFile = path.join(routesPath, file);
+    const routeName = path.basename(file, ".js");
+
+    try {
+      console.log(`🔄 Memeriksa module untuk '${routeName}'...`);
+      const routeCode = fs.readFileSync(routeFile, "utf8");
+      const moduleMatches = routeCode.match(/require["'`](.*?)["'`]/g) || [];
+
+      moduleMatches.forEach((match) => {
+        const moduleName = match.match(/require["'`](.*?)["'`]/)[1];
+        if (!moduleName.startsWith(".")) {
+          ensureModuleInstalled(moduleName);
+        }
+      });
+
+      const route = require(routeFile);
+      const routePath = `/api/${routeName}`;
+      app.use(routePath, route);
+
       if (route.tags) {
         route.tags.forEach((tag) => {
           if (!apiDocs[tag]) apiDocs[tag] = [];
-          apiDocs[tag].push(`/api/${file.replace('.js', '')}`);
+          apiDocs[tag].push(routePath);
         });
       }
+
+      console.log(chalk.green(`✅ Endpoint terdaftar: ${routePath}`));
+    } catch (error) {
+      console.log(chalk.red(`❌ Error pada route '${routeName}': ${error.message}`));
     }
   });
 
-  res.json(apiDocs);
+  return apiDocs;
+}
+
+let apiDocs = loadRoutes();
+
+// 🔹 Watcher: Auto Reload Routes Saat Ada Perubahan
+const watcher = chokidar.watch(path.join(__dirname, "routes"), { ignored: /^\./, persistent: true });
+
+watcher.on("add", (filePath) => {
+  const moduleName = path.basename(filePath, ".js");
+  console.log(`📂 File baru terdeteksi: ${moduleName}. Memeriksa dependensi...`);
+
+  setTimeout(() => {
+    delete require.cache[require.resolve(filePath)];
+    const route = require(filePath);
+    const routePath = `/api/${moduleName}`;
+
+    app.use(routePath, route);
+    console.log(chalk.green(`✅ Endpoint baru terdaftar: ${routePath}`));
+  }, 1000);
 });
 
-// === Halaman Utama (/) ===
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+watcher.on("change", (filePath) => {
+  const moduleName = path.basename(filePath, ".js");
+  console.log(`✏️ File diubah: ${moduleName}. Memperbarui route...`);
+
+  delete require.cache[require.resolve(filePath)];
+  const route = require(filePath);
+  const routePath = `/api/${moduleName}`;
+
+  app._router.stack = app._router.stack.filter(layer => !(layer.route && layer.route.path === routePath));
+  app.use(routePath, route);
+
+  console.log(chalk.green(`✅ Endpoint diperbarui: ${routePath}`));
 });
 
-// === API Log ===
-app.get('/api/logs', (req, res) => {
-  fs.readFile(logFilePath, 'utf8', (err, data) => {
-    if (err) {
-      logMessage('❌ Gagal membaca log!', 'error');
-      return res.status(500).json({ error: 'Gagal membaca log.' });
-    }
+watcher.on("unlink", (filePath) => {
+  const moduleName = path.basename(filePath, ".js");
+  console.log(`🗑️ File dihapus: ${moduleName}. Menghapus route...`);
 
-    const logs = data.split('\n').filter(line => line); // Hapus baris kosong
-    res.json({ logs });
-  });
-});
+  const routePath = `/api/${moduleName}`;
+  app._router.stack = app._router.stack.filter(layer => !(layer.route && layer.route.path === routePath));
 
-// === Halaman Log (/logs) ===
-app.get('/logs', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'logs.html'));
-});
-
-// === Halaman Upload ===
-app.get('/uploads', (req, res) => {
-  const password = req.query.password;
-  if (password === process.env.UPLOAD_PASSWORD) {
-    res.sendFile(path.join(__dirname, 'public', 'upload.html'));
-  } else {
-    res.status(403).send('Password salah. Akses ditolak.');
+  for (const tag in apiDocs) {
+    apiDocs[tag] = apiDocs[tag].filter(path => path !== routePath);
   }
+
+  console.log(chalk.green(`✅ Endpoint dihapus: ${routePath}`));
 });
 
-// === Menjalankan Server ===
+// 🔹 API Docs
+app.get("/api/docs", (req, res) => {
+  const apiDocsWithCount = {};
+
+  for (const tag in apiDocs) {
+    apiDocsWithCount[tag] = {
+      count: apiDocs[tag].length,
+      endpoints: apiDocs[tag],
+    };
+  }
+
+  res.json(apiDocsWithCount);
+});
+
+// 🔹 Halaman Utama
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+
+// 🔹 Jalankan Server
 const port = process.env.PORT || 8000;
 app.listen(port, () => {
-  logMessage(`🚀 Server berjalan di http://localhost:${port}`, 'success');
+  logMessage(`🚀 Server berjalan di http://localhost:${port}`, "success");
+  console.log("\n🎯 API Endpoints per tag:");
+
+  for (const tag in apiDocs) {
+    console.log(chalk.yellow(`\nTag: ${tag} - ${apiDocs[tag].length} API`));
+    apiDocs[tag].forEach(endpoint => {
+      console.log(chalk.green(`  - ${endpoint}`));
+    });
+  }
 });

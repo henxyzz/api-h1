@@ -3,116 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cyberpunk Video FPS Enhancer</title>
+    <title>Video FPS Upscaler</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
-
         body {
-            font-family: 'Orbitron', sans-serif;
-            background: #0d0d0d;
-            color: #0ff;
+            background: #0f0f0f;
+            color: #00ffcc;
+            font-family: Arial, sans-serif;
             text-align: center;
-            padding: 20px;
-        }
-        .container {
-            background: rgba(0, 255, 255, 0.1);
-            border: 2px solid #0ff;
-            padding: 20px;
-            border-radius: 10px;
-            width: 50%;
-            margin: auto;
-            box-shadow: 0 0 10px #0ff;
         }
         h1 {
-            color: #ff0077;
-            text-shadow: 0 0 10px #ff0077;
+            text-transform: uppercase;
+            text-shadow: 0px 0px 10px #00ffcc;
         }
-        input, button {
-            margin-top: 10px;
-            padding: 12px;
-            font-size: 16px;
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #00ffcc;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px #00ffcc;
+        }
+        input, select, button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
             border: none;
-            outline: none;
-            background: #ff0077;
-            color: #fff;
             border-radius: 5px;
+        }
+        input, select {
+            background: #222;
+            color: #00ffcc;
+        }
+        button {
+            background: #00ffcc;
+            color: #111;
+            font-weight: bold;
             cursor: pointer;
-            transition: 0.3s;
         }
         button:hover {
-            background: #ff44aa;
+            background: #009999;
         }
-        .progress {
+        .progress-container {
             width: 100%;
-            height: 10px;
-            background: rgba(0, 255, 255, 0.3);
+            background: #222;
             border-radius: 5px;
-            margin-top: 10px;
             overflow: hidden;
         }
-        #progressBar {
+        .progress-bar {
+            height: 10px;
             width: 0%;
-            height: 100%;
-            background: #0ff;
+            background: #00ffcc;
             transition: width 0.3s;
-        }
-        #result {
-            margin-top: 20px;
         }
         video {
             width: 100%;
+            border: 2px solid #00ffcc;
+            border-radius: 10px;
             margin-top: 10px;
-            border: 2px solid #ff0077;
-            box-shadow: 0 0 10px #ff0077;
         }
     </style>
 </head>
 <body>
+
+    <h1>Video FPS Upscaler</h1>
     <div class="container">
-        <h1>🎥 Cyberpunk AI Video FPS Enhancer</h1>
-        <input type="file" id="fileInput" accept="video/*">
-        <button onclick="uploadVideo()">Upload & Proses</button>
-        <div class="progress">
-            <div id="progressBar"></div>
+        <input type="file" id="videoInput" accept="video/*">
+        <select id="fpsSelect">
+            <option value="30">30 FPS</option>
+            <option value="60">60 FPS</option>
+            <option value="120">120 FPS</option>
+        </select>
+        <button onclick="uploadVideo()">Upload & Convert</button>
+
+        <p>Upload Progress: <span id="uploadProgress">0%</span></p>
+        <div class="progress-container">
+            <div class="progress-bar" id="uploadBar"></div>
         </div>
-        <div id="result"></div>
+
+        <p>Processing Progress: <span id="processProgress">0%</span></p>
+        <div class="progress-container">
+            <div class="progress-bar" id="processBar"></div>
+        </div>
+
+        <h2>Original Video</h2>
+        <video id="originalVideo" controls></video>
+
+        <h2>Enhanced Video</h2>
+        <video id="enhancedVideo" controls></video>
     </div>
+
     <script>
-        function uploadVideo() {
-            const fileInput = document.getElementById("fileInput");
-            if (!fileInput.files.length) return alert("Pilih video dulu!");
+        async function uploadVideo() {
+            const fileInput = document.getElementById("videoInput");
+            const fpsSelect = document.getElementById("fpsSelect");
+            const uploadProgressText = document.getElementById("uploadProgress");
+            const uploadBar = document.getElementById("uploadBar");
+            const processProgressText = document.getElementById("processProgress");
+            const processBar = document.getElementById("processBar");
+            const originalVideo = document.getElementById("originalVideo");
+            const enhancedVideo = document.getElementById("enhancedVideo");
 
+            if (fileInput.files.length === 0) {
+                alert("Pilih video dulu!");
+                return;
+            }
+
+            const file = fileInput.files[0];
             const formData = new FormData();
-            formData.append("video", fileInput.files[0]);
+            formData.append("video", file);
+            formData.append("fps", fpsSelect.value);
 
-            const progressBar = document.getElementById("progressBar");
-            progressBar.style.width = "0%";
+            // Tampilkan video asli sebelum upload
+            const videoURL = URL.createObjectURL(file);
+            originalVideo.src = videoURL;
 
-            document.getElementById("result").innerHTML = "Memproses...";
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "/api/videoupscale", true);
 
-            fetch("https://8000-henxyzz-apih1-luus0t3mj88.ws-us117.gitpod.io/api/smooth-video", {
-                method: "POST",
-                body: formData
-            })
-            .then(response => response.json())
-            .then(data => {
-                if (data.error) throw new Error(data.error);
-                document.getElementById("result").innerHTML = 
-                    `<video controls><source src="https://8000-henxyzz-apih1-luus0t3mj88.ws-us117.gitpod.io/outputs/${data.url}" type="video/mp4"></video>`;
-            })
-            .catch(error => {
-                document.getElementById("result").innerHTML = "Error: " + error.message;
-            });
-
-            let width = 0;
-            const interval = setInterval(() => {
-                if (width >= 100) clearInterval(interval);
-                else {
-                    width += 10;
-                    progressBar.style.width = width + "%";
+            // Update progress upload
+            xhr.upload.onprogress = (event) => {
+                if (event.lengthComputable) {
+                    let percent = Math.round((event.loaded / event.total) * 100);
+                    uploadProgressText.textContent = percent + "%";
+                    uploadBar.style.width = percent + "%";
                 }
-            }, 500);
+            };
+
+            xhr.onreadystatechange = () => {
+                if (xhr.readyState === XMLHttpRequest.LOADING) {
+                    const responses = xhr.responseText.trim().split("\n");
+                    const lastResponse = responses[responses.length - 1];
+
+                    try {
+                        const jsonData = JSON.parse(lastResponse);
+                        if (jsonData.processProgress) {
+                            processProgressText.textContent = jsonData.processProgress;
+                            processBar.style.width = jsonData.processProgress;
+                        }
+                        if (jsonData.url) {
+                            enhancedVideo.src = jsonData.url;
+                        }
+                    } catch (error) {
+                        console.log("Parsing error:", error);
+                    }
+                }
+            };
+
+            xhr.send(formData);
         }
     </script>
+
 </body>
 </html>

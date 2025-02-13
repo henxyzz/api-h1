@@ -1,75 +1,86 @@
 const express = require("express");
 const multer = require("multer");
+const { spawn } = require("child_process");
 const path = require("path");
 const fs = require("fs");
-const { exec } = require("child_process");
 
 const router = express.Router();
-router.tags = ["tools"];
+router.tags = ["video", "upscale", "fps"];
 
-const uploadDir = path.join(__dirname, "../uploads/");
-const outputDir = path.join(__dirname, "../outputs/");
+// Konfigurasi upload video
+const upload = multer({ dest: path.join(__dirname, "../uploads/") });
 
-if (!fs.existsSync(uploadDir)) fs.mkdirSync(uploadDir, { recursive: true });
-if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir, { recursive: true });
+// Regex untuk membaca durasi dan progress FFmpeg
+const durationRegex = /Duration: (\d+):(\d+):(\d+\.\d+)/;
+const timeRegex = /time=(\d+):(\d+):(\d+\.\d+)/;
 
-const storage = multer.diskStorage({
-  destination: (req, file, cb) => cb(null, uploadDir),
-  filename: (req, file, cb) => cb(null, Date.now() + path.extname(file.originalname)),
-});
+// API untuk mengubah FPS video
+router.post("/", upload.single("video"), (req, res) => {
+    if (!req.file) return res.status(400).json({ error: "Video tidak ditemukan" });
 
-const upload = multer({ storage });
+    const { fps = 60 } = req.body;
+    const inputPath = req.file.path;
+    const outputDir = path.join(__dirname, "../outputs/");
+    const outputFilename = `${Date.now()}_${fps}fps.mp4`;
+    const outputPath = path.join(outputDir, outputFilename);
 
-// **Preset Resolusi**
-const resolutions = {
-  low: { width: 854, height: 480 },    // SD 480p
-  medium: { width: 1280, height: 720 }, // HD 720p
-  high: { width: 1920, height: 1080 },  // Full HD 1080p
-  ultra: { width: 3840, height: 2160 }, // 4K UHD
-};
+    if (!fs.existsSync(outputDir)) fs.mkdirSync(outputDir);
 
-// 📌 **Endpoint Upload & Upscale Video**
-router.post("/upscale", upload.single("video"), async (req, res) => {
-  if (!req.file) return res.status(400).json({ success: false, message: "File video tidak ditemukan!" });
+    // Kirim progress upload 100% karena sudah diunggah
+    res.write(JSON.stringify({ uploadProgress: "100%" }) + "\n");
 
-  const inputFile = req.file.path;
-  const quality = req.body.quality || "ultra"; // Default 4K
-  const resolution = resolutions[quality];
+    let totalDuration = 0;
+    let responseSent = false;
 
-  if (!resolution) {
-    return res.status(400).json({ success: false, message: "Pilihan kualitas tidak valid!" });
-  }
+    // Jalankan FFmpeg untuk mengubah FPS
+    const ffmpeg = spawn("/usr/bin/ffmpeg", [
+        "-i", inputPath,
+        "-r", fps,
+        "-c:v", "libx264",
+        "-preset", "fast",
+        "-crf", "18",
+        outputPath
+    ]);
 
-  const outputFile = path.join(outputDir, `upscaled_${quality}_${Date.now()}.mp4`);
-  const ffmpegCmd = `ffmpeg -i "${inputFile}" -vf "scale=${resolution.width}:${resolution.height}:flags=lanczos" -preset slow "${outputFile}"`;
+    ffmpeg.stderr.on("data", (data) => {
+        const log = data.toString();
 
-  exec(ffmpegCmd, (err) => {
-    if (err) {
-      console.error("FFmpeg Error:", err);
-      return res.status(500).json({ success: false, message: "Upscale gagal!" });
-    }
+        // Ambil durasi total video
+        const durationMatch = log.match(durationRegex);
+        if (durationMatch) {
+            const hours = parseFloat(durationMatch[1]);
+            const minutes = parseFloat(durationMatch[2]);
+            const seconds = parseFloat(durationMatch[3]);
+            totalDuration = hours * 3600 + minutes * 60 + seconds;
+        }
 
-    fs.unlinkSync(inputFile); // 🔥 Hapus input buat hemat storage
+        // Ambil progress dari waktu berjalan
+        const timeMatch = log.match(timeRegex);
+        if (timeMatch && totalDuration > 0) {
+            const hours = parseFloat(timeMatch[1]);
+            const minutes = parseFloat(timeMatch[2]);
+            const seconds = parseFloat(timeMatch[3]);
+            const currentTime = hours * 3600 + minutes * 60 + seconds;
+            const progress = ((currentTime / totalDuration) * 100).toFixed(2);
 
-    res.json({
-      success: true,
-      message: `Upscale berhasil ke ${resolution.width}x${resolution.height}!`,
-      download: `/api/upscale/download?file=${path.basename(outputFile)}`,
+            console.log(`Progress: ${progress}%`);
+            res.write(JSON.stringify({ processProgress: `${progress}%` }) + "\n");
+        }
     });
-  });
-});
 
-// 📌 **Endpoint Download Hasil**
-router.get("/upscale/download", (req, res) => {
-  const { file } = req.query;
-  if (!file) return res.status(400).json({ success: false, message: "Nama file tidak diberikan!" });
+    ffmpeg.on("close", (code) => {
+        fs.unlinkSync(inputPath); // Hapus file upload
 
-  const filePath = path.join(outputDir, file);
-  if (!fs.existsSync(filePath)) return res.status(404).json({ success: false, message: "File tidak ditemukan!" });
+        if (code === 0) {
+            const fileUrl = `/outputs/${outputFilename}`;
+            res.write(JSON.stringify({ success: true, url: fileUrl }) + "\n");
+            res.end();
+        } else {
+            res.status(500).json({ error: "Gagal meng-upscale video" });
+        }
 
-  res.download(filePath, (err) => {
-    if (!err) fs.unlinkSync(filePath); // 🔥 Auto-hapus setelah download biar hemat storage
-  });
+        responseSent = true;
+    });
 });
 
 module.exports = router;

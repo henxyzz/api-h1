@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Stabilizer - Cyberpunk Theme</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #121212;
+            color: #00FF00;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            color: #00FF00;
+            text-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-size: 16px;
+        }
+        input[type="file"], input[type="number"] {
+            padding: 12px;
+            width: 300px;
+            background-color: #333;
+            border: 1px solid #00FF00;
+            color: #00FF00;
+        }
+        button {
+            padding: 12px 24px;
+            background-color: #FF00FF;
+            border: none;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #FF3333;
+        }
+        #output {
+            margin-top: 20px;
+        }
+        #progress {
+            font-size: 18px;
+            color: #FF00FF;
+        }
+        #videoOutput {
+            margin-top: 20px;
+            display: none;
+        }
+        video {
+            width: 100%;
+            max-width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cyberpunk Video Stabilizer</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <div class="form-group">
+            <label for="videoFile">Choose Video File</label>
+            <input type="file" id="videoFile" name="video" required>
+        </div>
+        <div class="form-group">
+            <label for="stability">Stabilization Level (1 - 10)</label>
+            <input type="number" id="stability" name="stability" min="1" max="10" value="5" required>
+        </div>
+        <button type="submit">Upload & Stabilize</button>
+    </form>
+
+    <div id="output"></div>
+    <div id="progress">Progress: 0%</div>
+    <div id="videoOutput">
+        <h3>Stabilized Video</h3>
+        <video id="stabilizedVideo" controls></video>
+    </div>
+
+    <script>
+        document.getElementById("uploadForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const formData = new FormData();
+            const videoFile = document.getElementById("videoFile").files[0];
+            const stability = document.getElementById("stability").value;
+
+            formData.append("video", videoFile);
+            formData.append("stability", stability);
+
+            const progressElement = document.getElementById("progress");
+
+            fetch("/api/stabilizer", {
+                method: "POST",
+                body: formData
+            })
+            .then(response => {
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+                let done = false;
+                let text = '';
+
+                reader.read().then(function processText({ done, value }) {
+                    text += decoder.decode(value, { stream: true });
+                    const lines = text.split("\n");
+
+                    lines.forEach(line => {
+                        try {
+                            const data = JSON.parse(line);
+                            if (data.progress) {
+                                progressElement.innerHTML = "Progress: " + data.progress;
+                            }
+                            if (data.success) {
+                                document.getElementById("videoOutput").style.display = "block";
+                                document.getElementById("stabilizedVideo").src = data.url;
+                            }
+                        } catch (e) {
+                            console.error("Error parsing progress:", e);
+                        }
+                    });
+
+                    if (!done) {
+                        reader.read().then(processText);
+                    }
+                });
+            })
+            .catch(error => {
+                document.getElementById("output").innerHTML = "Error: " + error.message;
+            });
+        });
+    </script>
+</body>
+</html>
