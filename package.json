@@ -8,6 +8,7 @@
     "dev": "nodemon app.js"
   },
   "dependencies": {
+    "@distube/ytdl-core": "^4.16.4",
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@ngrok/ngrok": "^1.4.1",
     "axios": "^0.27.2",
