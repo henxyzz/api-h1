@@ -1,8 +1,8 @@
 const express = require('express'); const fetch = require('node-fetch'); const { URLSearchParams } = require('url'); const router = express.Router();
 
-// Metadata untuk dokumentasi router.tags = ['ai']; router.handler = { description: 'API untuk berinteraksi dengan SimSimi menggunakan metode GET', };
+router.tags = ['ai']; router.handler = { description: 'API untuk berinteraksi dengan SimSimi menggunakan metode GET', };
 
-// Endpoint untuk berkomunikasi dengan SimSimi router.get('/simsimi', async (req, res) => { const { text, lang } = req.query;
+router.get('/', async (req, res) => { const { text, lang } = req.query;
 
 if (!text) { return res.status(400).json({ error: 'Parameter text diperlukan' }); }
 
