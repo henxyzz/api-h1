@@ -1,0 +1,6 @@
+node_modules/
+package-lock.json
+.cache/
+.npm/
+server.log
+log.txt

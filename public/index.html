@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="description" content="Azatxyz API - API  Terintegrasi untuk Masa Depan Digital. Akses berbagai layanan API canggih untuk aplikasi Anda.">
+
+    <meta name="author" content="Azatxyz">
+
+    <meta property="og:title" content="Azatxyz API">
+
+    <meta property="og:description" content="Azatxyz menyediakan berbagai API dengan kemampuan canggih yang dapat digunakan untuk aplikasi Anda. Jelajahi dokumentasi lengkapnya.">
+
+    <meta property="og:image" content="https://violently-intent-snapper.ngrok-free.app/logo.webp">
+
+    <meta property="og:url" content="https://api.azatxyz.com">
+
+    <meta name="twitter:card" content="https://violently-intent-snapper.ngrok-free.app/logo.webp">
+
+    <meta name="twitter:title" content="Azatxyz API">
+
+    <meta name="twitter:description" content="Azatxyz menawarkan berbagai API untuk aplikasi Anda. Lihat dokumentasi dan mulai gunakan API yang tersedia.">
+
+    <meta name="twitter:image" content="https://violently-intent-snapper.ngrok-free.app/logo.webp">
+
+    <meta name="twitter:site" content="@Azatxyz">
+
+    <link rel="icon" href="https://violently-intent-snapper.ngrok-free.app/logo.webp" type="image/x-icon">
+
+    <title>Azatxyz API</title>
+
+    <style>
+
+        @font-face {
+
+            font-family: 'Cyber';
+
+            src: url("https://assets.codepen.io/605876/Blender-Pro-Bold.otf");
+
+            font-display: swap;
+
+        }
+
+        * {
+
+            margin: 0;
+
+            padding: 0;
+
+            box-sizing: border-box;
+
+        }
+
+        body {
+
+            font-family: 'Cyber', sans-serif;
+
+            background: #121212;
+
+            color: #fff;
+
+            display: flex;
+
+            flex-direction: column;
+
+            align-items: center;
+
+            justify-content: center;
+
+            min-height: 100vh;
+
+            background: radial-gradient(circle at top, #3f3f3f, #121212);
+
+        }
+
+        header {
+
+            text-align: center;
+
+            margin-bottom: 40px;
+
+        }
+
+        h1 {
+
+            font-size: 4rem;
+
+            color: #00FFB2;
+
+            text-shadow: 0 0 10px #00FFB2, 0 0 20px #00FFB2, 0 0 30px #00FFB2;
+
+            text-transform: uppercase;
+
+            letter-spacing: 5px;
+
+        }
+
+        p {
+
+            font-size: 1.2rem;
+
+            color: #e6e6e6;
+
+            margin-bottom: 20px;
+
+        }
+
+        .cybr-btn {
+
+            background: linear-gradient(45deg, #FF00FF, #00FFFF);
+
+            padding: 12px 24px;
+
+            font-size: 1.5rem;
+
+            font-weight: bold;
+
+            color: white;
+
+            border: none;
+
+            border-radius: 8px;
+
+            cursor: pointer;
+
+            outline: none;
+
+            transition: 0.3s;
+
+            text-transform: uppercase;
+
+            box-shadow: 0 0 15px rgba(0, 255, 178, 0.8);
+
+        }
+
+        .cybr-btn:hover {
+
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+
+            background: linear-gradient(45deg, #00FFFF, #FF00FF);
+
+        }
+
+        .cybr-btn:active {
+
+            transform: scale(0.95);
+
+        }
+
+        h4 {
+
+            margin-top: 20px;
+
+            border-bottom: 2px solid #00FFB2;
+
+            width: 50%;
+
+            margin: 20px auto;
+
+        }
+
+        .container {
+
+            text-align: center;
+
+        }
+
+        h2 {
+
+            font-size: 2.5rem;
+
+            color: #FF00FF;
+
+            margin-bottom: 30px;
+
+            text-shadow: 0 0 15px #FF00FF, 0 0 30px #FF00FF;
+
+        }
+
+        ul {
+
+            list-style-type: none;
+
+            padding: 0;
+
+        }
+
+        ul li {
+
+            font-size: 1.2rem;
+
+            color: #e6e6e6;
+
+            margin: 15px 0;
+
+        }
+
+        .neon-text {
+
+            font-size: 1.5rem;
+
+            color: #FF00FF;
+
+            text-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF, 0 0 30px #FF00FF;
+
+        }
+
+        .neon-bg {
+
+            background: rgba(255, 255, 255, 0.1);
+
+            padding: 15px;
+
+            border-radius: 8px;
+
+            box-shadow: 0 0 20px #FF00FF;
+
+            margin-top: 30px;
+
+            font-size: 1.1rem;
+
+            color: #e6e6e6;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>Azatxyz API</h1>
+
+        <p class="neon-text">Cyberpunk API untuk masa depan digital!</p>
+
+        <h4></h4>
+
+        <a href="docs.html" class="cybr-btn">Lihat Dokumentasi</a>
+
+    </header>
+
+    <!-- Main Content -->
+
+    <section class="container">
+
+        <h2>🚀 Keunggulan Azatxyz API</h2>
+
+        <ul>
+
+            <li>⚡ <strong>Kecepatan Maksimal</strong> untuk aplikasi Anda</li>
+
+            <li>🛡️ <strong>Keamanan Cyber Tingkat Tinggi</strong> di setiap endpoint</li>
+
+            <li>📡 <strong>Support Berbagai Format</strong> dan integrasi mudah</li>
+
+        </ul>
+
+        <div class="neon-bg">
+
+            <p>Azatxyz API hadir untuk membantu Anda membangun masa depan digital yang lebih canggih. Akses berbagai layanan dan jadikan aplikasi Anda lebih powerful!</p>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

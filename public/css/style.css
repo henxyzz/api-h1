@@ -1,0 +1,125 @@
+/* Tema Blue Cyber */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0A0F24;
+    color: #E0E5EC;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background: #0E162F;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.6);
+}
+
+h1, h2 {
+    color: #00AEEF;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-shadow: 0 0 10px #00AEEF;
+}
+
+h2 {
+    border-bottom: 2px solid #00AEEF;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #00AEEF;
+    color: #0A0F24;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #008CBA;
+    box-shadow: 0 0 10px #00AEEF;
+}
+
+.api-section {
+    margin-top: 30px;
+    padding: 15px;
+    border: 2px solid #00AEEF;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 170, 255, 0.4);
+    background-color: #0D132A;
+}
+
+.api-section h2 {
+    color: #00AEEF;
+    font-size: 1.8em;
+}
+
+.api-list {
+    text-align: left;
+    padding: 10px;
+}
+
+.api-list p {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.api-list a {
+    color: #00E5FF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.api-list a:hover {
+    text-shadow: 0 0 10px #00E5FF;
+}
+
+/* Tombol Try */
+.try-btn {
+    display: inline-block;
+    padding: 8px 15px;
+    margin-left: 10px;
+    background-color: #00FFCC;
+    color: #0A0F24;
+    font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.try-btn:hover {
+    background-color: #00D4AA;
+    box-shadow: 0 0 10px #00FFCC;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .api-list p {
+        font-size: 1em;
+    }
+}

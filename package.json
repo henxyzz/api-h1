@@ -1,0 +1,46 @@
+{
+  "name": "express-auto-upload",
+  "version": "1.0.0",
+  "description": "Server dengan upload file otomatis dan penambahan route API secara dinamis.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
+    "@ngrok/ngrok": "^1.4.1",
+    "axios": "^0.27.2",
+    "canvas": "^3.1.0",
+    "chalk": "^4.1.2",
+    "chart.js": "^4.4.7",
+    "cloudscraper": "^4.6.0",
+    "color": "^4.2.3",
+    "colors": "^1.4.0",
+    "crypto-js": "^4.1.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.17.1",
+    "express-rate-limit": "^5.3.0",
+    "express-status-monitor": "^1.3.4",
+    "face-api.js": "^0.22.2",
+    "ffmpeg-static": "^5.2.0",
+    "fluent-ffmpeg": "^2.1.3",
+    "fs-extra": "^10.1.0",
+    "multer": "^1.4.4",
+    "ngrok": "^5.0.0-beta.2",
+    "qrcode": "^1.5.4",
+    "random-useragent": "^0.5.0",
+    "request-promise-native": "^1.0.9",
+    "sharp": "^0.33.5",
+    "socket.io": "^4.8.1",
+    "stack": "latest",
+    "strict": "latest",
+    "ws": "^8.8.0",
+    "yt-search": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "author": "Henzx",
+  "license": "MIT"
+}

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video FPS Upscaler</title>
+    <style>
+        body {
+            background: #0f0f0f;
+            color: #00ffcc;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            text-transform: uppercase;
+            text-shadow: 0px 0px 10px #00ffcc;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 2px solid #00ffcc;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px #00ffcc;
+        }
+        input, select, button {
+            display: block;
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+        }
+        input, select {
+            background: #222;
+            color: #00ffcc;
+        }
+        button {
+            background: #00ffcc;
+            color: #111;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #009999;
+        }
+        .progress-container {
+            width: 100%;
+            background: #222;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+        .progress-bar {
+            height: 10px;
+            width: 0%;
+            background: #00ffcc;
+            transition: width 0.3s;
+        }
+        video {
+            width: 100%;
+            border: 2px solid #00ffcc;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Video FPS Upscaler</h1>
+    <div class="container">
+        <input type="file" id="videoInput" accept="video/*">
+        <select id="fpsSelect">
+            <option value="30">30 FPS</option>
+            <option value="60">60 FPS</option>
+            <option value="120">120 FPS</option>
+        </select>
+        <button onclick="uploadVideo()">Upload & Convert</button>
+
+        <p>Upload Progress: <span id="uploadProgress">0%</span></p>
+        <div class="progress-container">
+            <div class="progress-bar" id="uploadBar"></div>
+        </div>
+
+        <p>Processing Progress: <span id="processProgress">0%</span></p>
+        <div class="progress-container">
+            <div class="progress-bar" id="processBar"></div>
+        </div>
+
+        <h2>Original Video</h2>
+        <video id="originalVideo" controls></video>
+
+        <h2>Enhanced Video</h2>
+        <video id="enhancedVideo" controls></video>
+    </div>
+
+    <script>
+        async function uploadVideo() {
+            const fileInput = document.getElementById("videoInput");
+            const fpsSelect = document.getElementById("fpsSelect");
+            const uploadProgressText = document.getElementById("uploadProgress");
+            const uploadBar = document.getElementById("uploadBar");
+            const processProgressText = document.getElementById("processProgress");
+            const processBar = document.getElementById("processBar");
+            const originalVideo = document.getElementById("originalVideo");
+            const enhancedVideo = document.getElementById("enhancedVideo");
+
+            if (fileInput.files.length === 0) {
+                alert("Pilih video dulu!");
+                return;
+            }
+
+            const file = fileInput.files[0];
+            const formData = new FormData();
+            formData.append("video", file);
+            formData.append("fps", fpsSelect.value);
+
+            // Tampilkan video asli sebelum upload
+            const videoURL = URL.createObjectURL(file);
+            originalVideo.src = videoURL;
+
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "/api/videoupscale", true);
+
+            // Update progress upload
+            xhr.upload.onprogress = (event) => {
+                if (event.lengthComputable) {
+                    let percent = Math.round((event.loaded / event.total) * 100);
+                    uploadProgressText.textContent = percent + "%";
+                    uploadBar.style.width = percent + "%";
+                }
+            };
+
+            xhr.onreadystatechange = () => {
+                if (xhr.readyState === XMLHttpRequest.LOADING) {
+                    const responses = xhr.responseText.trim().split("\n");
+                    const lastResponse = responses[responses.length - 1];
+
+                    try {
+                        const jsonData = JSON.parse(lastResponse);
+                        if (jsonData.processProgress) {
+                            processProgressText.textContent = jsonData.processProgress;
+                            processBar.style.width = jsonData.processProgress;
+                        }
+                        if (jsonData.url) {
+                            enhancedVideo.src = jsonData.url;
+                        }
+                    } catch (error) {
+                        console.log("Parsing error:", error);
+                    }
+                }
+            };
+
+            xhr.send(formData);
+        }
+    </script>
+
+</body>
+</html>
