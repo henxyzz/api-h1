@@ -291,7 +291,7 @@ builder.connect().then((session) => {
 
   session.labeledListener()
 
-    .label("edge", "edghts_2conaVAijHTPdLgVlSEhuGz0KKf")
+    .label("edge", "")
 
     .metadata("example listener metadata from nodejs")
 
