@@ -9,8 +9,6 @@ const chokidar = require("chokidar");
 const app = express();
 dotenv.config();
 
-const logFilePath = path.join(__dirname, "server.log");
-
 // 🔹 Cek & Install Module npm yang Hilang
 function ensureModuleInstalled(moduleName) {
   try {
