@@ -167,16 +167,23 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-// 🔹 Jalankan Server di Port Biasa
-const port = process.env.PORT || 8000;
-app.listen(port, () => {
-  logMessage(`🚀 Server berjalan di http://localhost:${port}`, "success");
+// Jangan pakai listen() di Vercel
+let sudahLog = false;
 
-  console.log("\n🎯 API Endpoints per tag:");
-  for (const tag in apiDocs) {
-    console.log(chalk.yellow(`\nTag: ${tag} - ${apiDocs[tag].length} API`));
-    apiDocs[tag].forEach(endpoint => {
-      console.log(chalk.green(`  - ${endpoint}`));
-    });
+module.exports = (req, res) => {
+  if (!sudahLog) {
+    logMessage(`🚀 Server berjalan di Serverless Mode (Vercel)`, "success");
+
+    console.log("\n🎯 API Endpoints per tag:");
+    for (const tag in apiDocs) {
+      console.log(chalk.yellow(`\nTag: ${tag} - ${apiDocs[tag].length} API`));
+      apiDocs[tag].forEach(endpoint => {
+        console.log(chalk.green(`  - ${endpoint}`));
+      });
+    }
+
+    sudahLog = true;
   }
-});
+
+  app(req, res); // Ini yang ngejalanin express-nya
+};
