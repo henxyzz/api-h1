@@ -166,22 +166,26 @@ app.get("/", (req, res) => {
 });
 
 // Jangan pakai listen() di Vercel
+const http = require("http");
+const PORT = process.env.PORT || 8080;
+
 let sudahLog = false;
 
-module.exports = (req, res) => {
-  if (!sudahLog) {
-    logMessage(`🚀 Server berjalan di Serverless Mode (Vercel)`, "success");
+if (!sudahLog) {
+  logMessage(`🚀 Server berjalan di mode HTTP`, "success");
 
-    console.log("\n🎯 API Endpoints per tag:");
-    for (const tag in apiDocs) {
-      console.log(chalk.yellow(`\nTag: ${tag} - ${apiDocs[tag].length} API`));
-      apiDocs[tag].forEach(endpoint => {
-        console.log(chalk.green(`  - ${endpoint}`));
-      });
-    }
-
-    sudahLog = true;
+  console.log("\n🎯 API Endpoints per tag:");
+  for (const tag in apiDocs) {
+    console.log(chalk.yellow(`\nTag: ${tag} - ${apiDocs[tag].length} API`));
+    apiDocs[tag].forEach(endpoint => {
+      console.log(chalk.green(`  - ${endpoint}`));
+    });
   }
 
-  app(req, res); // Ini yang ngejalanin express-nya
-};
+  sudahLog = true;
+}
+
+// Jalankan HTTP server
+http.createServer(app).listen(PORT, () => {
+  console.log(chalk.green(`🌐 Server aktif di http://localhost:${PORT}`));
+});
