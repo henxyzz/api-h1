@@ -5,9 +5,13 @@ const { execSync } = require("child_process");
 const chalk = require("chalk");
 const dotenv = require("dotenv");
 const chokidar = require("chokidar");
+const http = require("http");
 
 const app = express();
 dotenv.config();
+
+// 🔹 Path file log
+const logFilePath = path.join(__dirname, "server.log");
 
 // 🔹 Cek & Install Module npm yang Hilang
 function ensureModuleInstalled(moduleName) {
@@ -74,10 +78,10 @@ function loadRoutes() {
     try {
       console.log(`🔄 Memeriksa module untuk '${routeName}'...`);
       const routeCode = fs.readFileSync(routeFile, "utf8");
-      const moduleMatches = routeCode.match(/require["'`](.*?)["'`]/g) || [];
+      const moduleMatches = routeCode.match(/require\(["'`](.*?)["'`]\)/g) || [];
 
       moduleMatches.forEach((match) => {
-        const moduleName = match.match(/require["'`](.*?)["'`]/)[1];
+        const moduleName = match.match(/require\(["'`](.*?)["'`]\)/)[1];
         if (!moduleName.startsWith(".")) {
           ensureModuleInstalled(moduleName);
         }
@@ -165,10 +169,8 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-// Jangan pakai listen() di Vercel
-const http = require("http");
+// 🔹 Jalankan HTTP Server
 const PORT = process.env.PORT || 8080;
-
 let sudahLog = false;
 
 if (!sudahLog) {
@@ -185,7 +187,6 @@ if (!sudahLog) {
   sudahLog = true;
 }
 
-// Jalankan HTTP server
 http.createServer(app).listen(PORT, () => {
   console.log(chalk.green(`🌐 Server aktif di http://localhost:${PORT}`));
 });
